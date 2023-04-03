@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="At our Indiana-based commercial real estate firm, we're dedicated to helping local businesses thrive. Let us help you find the perfect property for your needs.">
+    <meta name="keywords" content="commercial real estate, office space, retail space, leasing, Indiana, Bloomington, Indianapolis, commercial property">
+    <meta name="author" content="Landon Tally and Ghazal Rawah, Tally Designs">
+    <meta name="robots" content="index, follow">
+
+    <!-- Styles -->
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+
+    <!-- Mapbox -->
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' rel='stylesheet' />
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js'></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Indiana Commercial Real Estate Services | Kamen Real Estate</title>
+  </head>
+  <body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+      <div class="container">
+          <a href="index.html" class="navbar-brand"><span>Kamen</span> Real Estate</a>
+  
+          <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navmenu"
+              aria-controls="navmenu"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+          >
+              <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <div class="collapse navbar-collapse" id="navmenu">
+              <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                      <a href="index.html" class="nav-link">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="about.html" class="nav-link active" aria-current="page">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="properties.html" class="nav-link">Properties</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="contact.html" class="nav-link">Contact Us</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="./properties/template.html" class="nav-link">Temp</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="tel:8123341936" class="nav-link" aria-label="Call (812) 334-1936">
+                          Call (812) 334-1936
+                      </a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+
+    <!-- Body Sections -->
+    <section id="aboutus" class="py-3 mt-5 mb-4">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md-6 col-sm-12">
+                    <img src="img/group.jpg" class="img-fluid rounded-4" alt="">
+                </div>
+                <div class="col-md-6 col-sm-12 py-3">
+                    <h2>About Kamen Real Estate</h2>
+                    <p>At Kamen Real Estate, we are a family-owned and operated business based in the heart of Bloomington, IN. We've been serving the community since 1977, specializing in providing top-notch campus housing to Indiana University students and commercial real estate services throughout the state.
+                      <br><br>
+                      We take immense pride in being a part of the Bloomington community and beyond, offering over 70 stunning residential buildings and a range of commercial spaces. Our dedication to making a positive impact on the community is unwavering, and we are thrilled to continue serving the area with our warm and friendly approach to real estate.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- The Team -->
+    <section id="OurTeam" class="py-5 bg-dark text-light">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-lg-8 col-sm-12 py-2">
+                    <h2>Our Team</h2>
+                    <p class="lead">
+                        Client focused. Results driven.
+                    </p>
+                    <p>
+                      At Kamen Real Estate, we're all about growing our awesome team of local experts and using top-notch tech to give our clients the best commercial real estate experience. Our superstar team is with you from the get-go, even before a property hits the market, right up to closing the deal. Our dedication and efficient systems have helped us become a leading name in the business.
+                    </p>
+                    <p>
+                      If we have a new property that interests you, come and reach out directly to our broker, Eric Kamen, for more information.
+                    </p>
+                    <a href="contact.html" class="btn btn-primary my-2">
+                      Connect with Eric
+                    </a>   
+                </div>
+                <div class="single-team col-lg-4 col-sm-8 rounded-5" style="background-image: url('img/eric.jpg');">
+                  <div class="content">
+                    <h3>Eric Kamen <span>Broker</span></h3>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Q&A Accordion -->
+    <section id="questions" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+        <div class="accordion accordion-flush" id="questions">
+          <!-- Item 1 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-one"
+              >
+                Where do you lease properties?
+              </button>
+            </h2>
+            <div
+              id="question-one"
+              class="accordion-collapse collapse"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body">
+                Our core business revolves around the leasing of commercial properties located in the inviting towns of Bloomington and Indianapolis, Indiana. We take great pride in providing our clients with personalized and attentive service to ensure that their leasing experience is both seamless and enjoyable. 
+              </div>
+            </div>
+          </div>
+          <!-- Item 2 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-two"
+              >
+                How much does it cost to rent?
+              </button>
+            </h2>
+            <div
+              id="question-two"
+              class="accordion-collapse collapse"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body">
+                We understand that pricing is an important consideration, and we are more than happy to assist you with any inquiries you may have. You can easily find the cost of each property listed on our website's <a href="index.html#NewProperties">homepage</a>. However, if you prefer to have a more personal interaction, our knowledgeable and friendly broker, Eric Kamen, is available to answer any questions you may have. You may reach him at (812) 345-1663.
+              </div>
+            </div>
+          </div>
+          <!-- Item 3 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-three"
+              >
+                Example
+              </button>
+            </h2>
+            <div
+              id="question-three"
+              class="accordion-collapse collapse"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+                beatae fuga animi distinctio perspiciatis adipisci velit maiores
+                totam tempora accusamus modi explicabo accusantium consequatur,
+                praesentium rem quisquam molestias at quos vero. Officiis ad
+                velit doloremque at. Dignissimos praesentium necessitatibus
+                natus corrupti cum consequatur aliquam! Minima molestias iure
+                quam distinctio velit.
+              </div>
+            </div>
+          </div>
+          <!-- Item 4 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-four"
+              >
+                Example
+              </button>
+            </h2>
+            <div
+              id="question-four"
+              class="accordion-collapse collapse"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+                beatae fuga animi distinctio perspiciatis adipisci velit maiores
+                totam tempora accusamus modi explicabo accusantium consequatur,
+                praesentium rem quisquam molestias at quos vero. Officiis ad
+                velit doloremque at. Dignissimos praesentium necessitatibus
+                natus corrupti cum consequatur aliquam! Minima molestias iure
+                quam distinctio velit.
+              </div>
+            </div>
+          </div>
+          <!-- Item 5 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-five"
+              >
+                Example
+              </button>
+            </h2>
+            <div
+              id="question-five"
+              class="accordion-collapse collapse"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+                beatae fuga animi distinctio perspiciatis adipisci velit maiores
+                totam tempora accusamus modi explicabo accusantium consequatur,
+                praesentium rem quisquam molestias at quos vero. Officiis ad
+                velit doloremque at. Dignissimos praesentium necessitatibus
+                natus corrupti cum consequatur aliquam! Minima molestias iure
+                quam distinctio velit.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="bg-primary text-light py-4 mt-3">
+      <div class="container newsletter d-md-flex justify-content-between align-items-center">
+        <h3 class="mb-0">Sign up for our Newsletter</h3>
+        <div class="input-group news-input mt-3 mt-md-0">
+          <input type="email" class="form-control" placeholder="Enter Email" aria-label="Email" aria-describedby="newsletter-btn" />
+          <button class="btn btn-dark btn-lg" type="button" id="newsletter-btn">Register</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Map -->
+    <section class="pt-4">
+      <div class="container">
+        <h1 class="text-center mb-4">Contact Info</h1>
+        <div class="row g-3">
+          <div class="col-md">
+            <ul class="list-group list-group-flush lead">
+              <li class="list-group-item">
+                <span class="fw-bold">Location:</span> 1440 Liberty Drive, Bloomington, Indiana 47403
+              </li>
+              <li class="list-group-item">
+                <label for="office-phone" class="fw-bold">Office Phone:</label>
+                <a href="tel:(812)334-1936" id="office-phone">(812) 334-1936</a>
+              </li>
+              <li class="list-group-item">
+                <label for="rental-email" class="fw-bold">Rental Email:</label>
+                <a href="mailto:eric@bryanrental.com" id="rental-email">eric@bryanrental.com</a>
+              </li>
+              <li class="list-group-item">
+                <label for="office-email" class="fw-bold">Office Email:</label>
+                <a href="mailto:mail@kksales.com" id="collections-email">mail@kksales.com</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md">
+            <div id="map1" aria-label="Map displaying location of 1440 Liberty Drive, Bloomington, Indiana"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <!-- Footer -->
+    <footer class="p-3 bg-dark text-white text-center mt-5 mb-0 position-relative">
+      <div class="container pb-2">
+        <p class="mb-0 fs-7">
+          <a href="sitemap.html">Site Map</a> | <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a>
+        </p>
+        <p class="lead mb-0 fs-6">
+          &copy; 2023 Kamen Real Estate. 
+        </p>
+        <p class="class lead pt-0 my-0 fs-7">All Rights Reserved.</p>
+        <!-- <p class="lead mb-0 fs-7">
+          Site by <a href="mailto: landon@kksales.com">Landon Tally</a>
+        </p> -->
+        <a href="#" class="position-absolute bottom-0 end-0 p-3" rel="nofollow">
+          <i class="bi bi-arrow-up-circle h1"></i>
+        </a>
+      </div>
+    </footer>
+    
+    
+
+    <!-- Scripts -->
+     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+     <script>
+	     mapboxgl.accessToken = 'pk.eyJ1IjoibHRhbGx5IiwiYSI6ImNsZjhlZHhlZjF1cXgzeXBxaThkaW8wMWkifQ.DBKNmdcZSJ7crjDcnad6lg';
+       const map1 = new mapboxgl.Map({
+        container: 'map1', // container ID
+        style: 'mapbox://styles/mapbox/streets-v12', // style URL
+        center: [-86.57713, 39.156], // starting position [lng, lat], opposite of google maps
+        zoom: 11.5 // starting zoom
+      });
+
+      const marker1 = new mapboxgl.Marker()
+        .setLngLat([-86.5778, 39.1555])
+        .addTo(map1);
+
+    </script>
+  </body>
+</html>
