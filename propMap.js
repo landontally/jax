@@ -9,7 +9,7 @@ const properties = [
     zip: "47401",
     info: "",
     imageUrl: "./propertyimage/redlobster.jpg",
-    webPage: "./properties/redlobster.html",
+    webPage: "https://www.redlobster.com/seafood-restaurants/locations/in/bloomington/2617-e-3rd-street",
     lat: 39.16469,
     lng: -86.4993,
   },
@@ -706,7 +706,7 @@ properties.forEach((property) => {
       <p class="p-0 mx-4 mb-2">${property.city}, ${property.state} ${property.zip}</p>
       <p class="p-0 mx-4 mb-2">${property.info}</p>
     <div class="property-actions mx-auto">
-      <a href="${property.webPage}" class="btn btn-dark my-0" style="color: #fff">Learn More</a>
+      <a href="${property.webPage}" target="_blank" class="btn btn-dark my-0" style="color: #fff">Learn More</a>
       <button class="btn btn-dark center-on-map" data-lat="${property.lat}" data-lng="${property.lng}">Center on Map</button>
     </div>
     </div>
