@@ -12,6 +12,10 @@ body::before {
   padding: 0;
 }
 
+.modal-dialog {
+  max-width: 1140px;
+}
+
 .container-fluid {
   padding: 0;
 }
