@@ -491,9 +491,6 @@ background-image: url('img/detective.jpg');
   .single-team {
     margin-bottom: 30px;
   }
-}
-
-@media (max-width: 767px){
 
   #mapid {
     margin-top: 20px;
@@ -523,6 +520,13 @@ background-image: url('img/detective.jpg');
     top: 10px;
     left: 50%;
     transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 992px){
+  .col-md img {
+    max-width: 100%;
+    height: auto;
   }
 }
 
