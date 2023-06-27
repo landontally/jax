@@ -35,10 +35,10 @@ ul.border {
   padding: 10px;
 }
 
-
-
 /* Navbar Styles */
-
+.navbar {
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
+}
 .navbar-nav a {
 font-size: 15px;
 text-transform: uppercase;
@@ -344,10 +344,16 @@ width: 100%;
   margin: 0;
 }
 
-#property-list {
-  height: auto;
+.property-list-container {
   overflow-y: auto;
   overflow-x: hidden;
+  border: 1px solid black;
+}
+
+#property-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
 .property-item {
