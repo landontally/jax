@@ -1,8 +1,23 @@
 // Property data
 const properties = [
   {
+    id: 6,
+    name: "Toppers",
+    new: "./img/new.png",
+    address: "212 S. Indiana Avenue",
+    city: "Bloomington",
+    state: "IN",
+    zip: "47408",
+    info: "",
+    imageUrl: "./propertyimage/toppers.jpg",
+    webPage: "./properties/construction.html",
+    lat: 39.16490,
+    lng: -86.52706,
+  },
+  {
     id: 1,
     name: "Red Lobster",
+    new: "",
     address: "2617 E. 3rd Street",
     city: "Bloomington",
     state: "IN",
@@ -16,6 +31,7 @@ const properties = [
   {
     id: 2,
     name: "Travelodge by Windham",
+    new: "",
     address: "2615 E. 3rd Street",
     city: "Bloomington",
     state: "IN",
@@ -29,6 +45,7 @@ const properties = [
   {
     id: 3,
     name: "Jiffy Lube",
+    new: "",
     address: "2621 E. 3rd Street",
     city: "Bloomington",
     state: "IN",
@@ -42,6 +59,7 @@ const properties = [
   {
     id: 4,
     name: "Midas",
+    new: "",
     address: "2619 E. 3rd Street",
     city: "Bloomington",
     state: "IN",
@@ -55,6 +73,7 @@ const properties = [
   {
     id: 5,
     name: "Starbucks",
+    new: "",
     address: "2105 Liberty Drive",
     city: "Bloomington",
     state: "IN",
@@ -66,21 +85,9 @@ const properties = [
     lng: -86.57715,
   },
   {
-    id: 6,
-    name: "Toppers",
-    address: "212 S. Indiana Avenue",
-    city: "Bloomington",
-    state: "IN",
-    zip: "47408",
-    info: "",
-    imageUrl: "./propertyimage/toppers.jpg",
-    webPage: "./properties/construction.html",
-    lat: 39.16490,
-    lng: -86.52706,
-  },
-  {
     id: 7,
     name: "Chow Bar",
+    new: "",
     address: "212 S. Indiana Avenue",
     city: "Bloomington",
     state: "IN",
@@ -94,6 +101,7 @@ const properties = [
   {
     id: 8,
     name: "Burma Garden Restaurant",
+    new: "",
     address: "413 E. 4th Street",
     city: "Bloomington",
     state: "IN",
@@ -107,6 +115,7 @@ const properties = [
   {
     id: 9,
     name: "Korea Restaurant",
+    new: "",
     address: "409 E. 4th Street",
     city: "Bloomington",
     state: "IN",
@@ -120,6 +129,7 @@ const properties = [
   {
     id: 10,
     name: "Anatolia",
+    new: "",
     address: "409 E. 4th Street",
     city: "Bloomington",
     state: "IN",
@@ -133,6 +143,7 @@ const properties = [
   {
     id: 11,
     name: "India Garden",
+    new: "",
     address: "416 E. 4th Street",
     city: "Bloomington",
     state: "IN",
@@ -146,6 +157,7 @@ const properties = [
   {
     id: 12,
     name: "Ami",
+    new: "",
     address: "1500 E. 3rd Street",
     city: "Bloomington",
     state: "IN",
@@ -159,6 +171,7 @@ const properties = [
   {
     id: 13,
     name: "Schultz Reagon, LLC",
+    new: "",
     address: "4201 E. 3rd Street",
     city: "Bloomington",
     state: "IN",
@@ -172,6 +185,7 @@ const properties = [
   {
     id: 14,
     name: "American Midwest",
+    new: "",
     address: "4201 E. 3rd Street",
     city: "Bloomington",
     state: "IN",
@@ -185,6 +199,7 @@ const properties = [
   {
     id: 15,
     name: "Avanti Salon",
+    new: "",
     address: "4201 E. 3rd Street",
     city: "Bloomington",
     state: "IN",
@@ -198,6 +213,7 @@ const properties = [
   {
     id: 16,
     name: "Rajesh Station",
+    new: "",
     address: "275 E. Winslow Road",
     city: "Bloomington",
     state: "IN",
@@ -211,6 +227,7 @@ const properties = [
   {
     id: 17,
     name: "Grab n Go",
+    new: "",
     address: "901 N. Indiana Avenue",
     city: "Bloomington",
     state: "IN",
@@ -224,6 +241,7 @@ const properties = [
   {
     id: 18,
     name: "Village Pantry",
+    new: "",
     address: "1320 E. 3rd Street",
     city: "Bloomington",
     state: "IN",
@@ -237,6 +255,7 @@ const properties = [
   {
     id: 19,
     name: "NPAG",
+    new: "",
     address: "2282 W. Industrial Park Drive",
     city: "Bloomington",
     state: "IN",
@@ -250,6 +269,7 @@ const properties = [
   {
     id: 20,
     name: "Lincoln Square Pancake House",
+    new: "",
     address: "2160 N. Walnut Street",
     city: "Bloomington",
     state: "IN",
@@ -263,6 +283,7 @@ const properties = [
   {
     id: 21,
     name: "Pizza Hut",
+    new: "",
     address: "125 S. Franklin Road",
     city: "Bloomington",
     state: "IN",
@@ -276,6 +297,7 @@ const properties = [
   {
     id: 22,
     name: "Riviera Maya",
+    new: "",
     address: "116 S. Franklin Road",
     city: "Bloomington",
     state: "IN",
@@ -289,6 +311,7 @@ const properties = [
   {
     id: 23,
     name: "Byers Scientific",
+    new: "",
     address: "2332 W. Industrial Park Drive",
     city: "Bloomington",
     state: "IN",
@@ -302,6 +325,7 @@ const properties = [
   {
     id: 24,
     name: "Follet",
+    new: "",
     address: "2356 W. Industrial Park Drive",
     city: "Bloomington",
     state: "IN",
@@ -315,6 +339,7 @@ const properties = [
   {
     id: 25,
     name: "First Financial Bank",
+    new: "",
     address: "3205 E. 3rd Street",
     city: "Bloomington",
     state: "IN",
@@ -328,6 +353,7 @@ const properties = [
   {
     id: 26,
     name: "Smokin' Jack's Rib Shack",
+    new: "",
     address: "505 W. 17th Street",
     city: "Bloomington",
     state: "IN",
@@ -341,6 +367,7 @@ const properties = [
   {
     id: 27,
     name: "Performance Refinish Supply",
+    new: "",
     address: "1400 W. Bloomfield Road",
     city: "Bloomington",
     state: "IN",
@@ -354,6 +381,7 @@ const properties = [
   {
     id: 28,
     name: "Sunset Hill Fence",
+    new: "",
     address: "1440 W. Bloomfield Road",
     city: "Bloomington",
     state: "IN",
@@ -367,6 +395,7 @@ const properties = [
   {
     id: 29,
     name: "Medical One",
+    new: "",
     address: "2411 S. Curry Pike",
     city: "Bloomington",
     state: "IN",
@@ -380,6 +409,7 @@ const properties = [
   {
     id: 30,
     name: "At Home",
+    new: "",
     address: "3175 W. 3rd Street",
     city: "Bloomington",
     state: "IN",
@@ -393,6 +423,7 @@ const properties = [
   {
     id: 31,
     name: "Fresh Thyme Market",
+    new: "",
     address: "3600 W. 3rd Street",
     city: "Bloomington",
     state: "IN",
@@ -406,6 +437,7 @@ const properties = [
   {
     id: 32,
     name: "Kroger",
+    new: "",
     address: "155 S. Kingston Drive",
     city: "Bloomington",
     state: "IN",
@@ -419,6 +451,7 @@ const properties = [
   {
     id: 33,
     name: "Yatagarasu Ramen",
+    new: "",
     address: "430 E. Kirkwood Avenue",
     city: "Bloomington",
     state: "IN",
@@ -432,6 +465,7 @@ const properties = [
   {
     id: 34,
     name: "Jimmy John's",
+    new: "",
     address: "430 E. Kirkwood Avenue",
     city: "Bloomington",
     state: "IN",
@@ -445,6 +479,7 @@ const properties = [
   {
     id: 35,
     name: "The Upstairs Pub",
+    new: "",
     address: "430 E. Kirkwood Avenue",
     city: "Bloomington",
     state: "IN",
@@ -458,6 +493,7 @@ const properties = [
   {
     id: 36,
     name: "Chase ATM",
+    new: "",
     address: "502 E. Kirkwood Avenue",
     city: "Bloomington",
     state: "IN",
@@ -471,6 +507,7 @@ const properties = [
   {
     id: 37,
     name: "Z&C Teriyaki & Sushi",
+    new: "",
     address: "430 E. Kirkwood Avenue",
     city: "Bloomington",
     state: "IN",
@@ -484,6 +521,7 @@ const properties = [
   {
     id: 38,
     name: "Insomnia Cookies",
+    new: "",
     address: "430 E. Kirkwood Avenue",
     city: "Bloomington",
     state: "IN",
@@ -498,6 +536,7 @@ const properties = [
   {
     id: 40,
     name: "Crimson Nails & Spa",
+    new: "",
     address: "161 S. Kingston Drive",
     city: "Bloomington",
     state: "IN",
@@ -511,6 +550,7 @@ const properties = [
   {
     id: 41,
     name: "World of Dance",
+    new: "",
     address: "149 S. Kingston Drive",
     city: "Bloomington",
     state: "IN",
@@ -524,6 +564,7 @@ const properties = [
   {
     id: 42,
     name: "DaVita Hoosier Hills Dialysis",
+    new: "",
     address: "143 S. Kingston Drive",
     city: "Bloomington",
     state: "IN",
@@ -537,6 +578,7 @@ const properties = [
   {
     id: 43,
     name: "Dr. William E. Arnold Jr.",
+    new: "",
     address: "167 S. Kingston Drive",
     city: "Bloomington",
     state: "IN",
@@ -551,6 +593,7 @@ const properties = [
   {
     id: 45,
     name: "PXG",
+    new: "",
     address: "6091 E. 82nd Street",
     city: "Indianapolis",
     state: "IN",
@@ -564,6 +607,7 @@ const properties = [
   {
     id: 46,
     name: "Nora Urgent Care",
+    new: "",
     address: "10950 Pendleton Pike",
     city: "Indianapolis",
     state: "IN",
@@ -577,6 +621,7 @@ const properties = [
   {
     id: 47,
     name: "Marathon",
+    new: "",
     address: "9550 Hague Road",
     city: "Indianapolis",
     state: "IN",
@@ -590,6 +635,7 @@ const properties = [
   {
     id: 48,
     name: "Phillips 66 - Indianapolis",
+    new: "",
     address: "7751 S. Meridian",
     city: "Indianapolis",
     state: "IN",
@@ -603,6 +649,7 @@ const properties = [
   {
     id: 49,
     name: "G5 Auto Sales",
+    new: "",
     address: "11544 Allisonville Road",
     city: "Fishers",
     state: "IN",
@@ -616,6 +663,7 @@ const properties = [
   {
     id: 50,
     name: "Circle K - Fishers",
+    new: "",
     address: "9609 Olio Road",
     city: "Fishers",
     state: "IN",
@@ -630,6 +678,7 @@ const properties = [
   {
     id: 52,
     name: "Circle K - Noblesville",
+    new: "",
     address: "14554 Herriman Boulevard",
     city: "Noblesville",
     state: "IN",
@@ -643,6 +692,7 @@ const properties = [
   {
     id: 53,
     name: "Circle K - Carmel",
+    new: "",
     address: "14554 Herriman Boulevard",
     city: "Carmel",
     state: "IN",
@@ -656,6 +706,7 @@ const properties = [
   {
     id: 54,
     name: "Phillips 66 - Columbus",
+    new: "",
     address: "910 3rd Street",
     city: "Columbus",
     state: "IN",
@@ -689,19 +740,26 @@ properties.forEach((property) => {
   // Create a popup for the marker
   const popupContent = `
     <img src="${property.imageUrl}" class="border border-dark border-2 border-solid rounded mx-auto d-block" alt="${property.name}" width="300" height="200" />
-    <h3 class="p-0 mx-2 my-0">${property.name}</h3>
+    <h4 class="p-0 mx-2 my-0">
+      ${property.name}
+      <img src="${property.new}" class="new" width="20" height="auto" />
+    </h4>
     <p class="p-0 mx-2 my-0">${property.address}</p>
     <p class="p-0 mx-2 my-0">${property.city}, ${property.state} ${property.zip}</p>
     <p class="p-0 mx-2 my-2">${property.info}</p>
     <a href="${property.webPage}" class="btn btn-dark mx-1 my-0" style="color: #fff">Learn More</a>
-  `;
+    
+    `;
   marker.bindPopup(popupContent);
 
   // Add property to the property list
   const propertyListItem = `
     <div class="property-item" id="property-${property.id}">
       <img src="${property.imageUrl}" class="border border-dark border-2 border-solid rounded mx-auto d-block" alt="${property.name}" width="300" height="200" />
-      <h4 class="p-0 mx-4 my-0">${property.name}</h4>
+      <h4 class="p-0 mx-4 my-0">
+        ${property.name}
+        <img src="${property.new}" class="new" width="20" height="auto" />
+      </h4>
       <p class="p-0 mx-4 my-0">${property.address}</p>
       <p class="p-0 mx-4 mb-2">${property.city}, ${property.state} ${property.zip}</p>
       <p class="p-0 mx-4 mb-2">${property.info}</p>

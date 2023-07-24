@@ -39,6 +39,12 @@ ul.border {
   color: #dddddd; 
 }
 
+.new {
+  position: relative;
+  top: 0.1em;
+  right: 0.2em;
+}
+
 /* Navbar Styles */
 .navbar {
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
