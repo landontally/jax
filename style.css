@@ -35,15 +35,21 @@ ul.border {
   padding: 10px;
 }
 
+.bi-arrow-up-circle {
+  color: #dddddd; 
+}
+
 /* Navbar Styles */
 .navbar {
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
 }
+
 .navbar-nav a {
 font-size: 15px;
-text-transform: uppercase;
-font-weight: 500;
+/* text-transform: uppercase; */
+font-weight: 400;
 }
+
 .navbar-dark .navbar-brand {
 color: #fff;
 font-size: 25px;
@@ -51,11 +57,25 @@ text-transform: uppercase;
 font-weight: 900;
 letter-spacing: 2px;
 }
+
 .navbar-dark .navbar-brand span {
 color: crimson
 }
+
 .navbar-dark .navbar-brand:focus, .navbar-dark .navbar-brand:hover, .navbar-dark .navbar-nav .nav-link:active {
 color: crimson;
+}
+
+.nav-link {
+  width: 100%;
+  padding: 0 1em; /* Add some padding around the link text for spacing */
+  transition: border-bottom 0.3s ease; /* Add a smooth transition effect for the border-bottom */
+  position: relative; /* Add position relative to create a stacking context */
+}
+
+.nav-link:hover {
+  color: #fff; /* Change the text color on hover to improve readability */
+  border-bottom: 1px solid #fff; /* Add the underline effect on hover */
 }
 
 /* The Contact Us Styles */
@@ -226,9 +246,10 @@ height: 100vh;
 }
 
 .navbar-toggler {
-padding: 1px 5px;
-font-size: 18px;
-line-height: 0.3;
+  /* Reset padding, font-size, and line-height to default */
+  padding: 0;
+  font-size: inherit;
+  line-height: inherit;
 }
 
 /* Home Page Carousel */
@@ -469,19 +490,35 @@ transform: translate3d(0, 0, 0)
 background-image: url('img/detective.jpg');
 }
 
+@media screen and (max-width: 1200) {
+  .navbar .navbar-nav .nav-item {
+    display: flex;
+  }
+
+  .navbar .navbar-collapse {
+    display: flex !important;
+    flex-basis: 100%;
+    justify-content: center;
+  }
+
+  .navbar .navbar-nav .nav-item .nav-link {
+    padding: 0 0.5em;
+  }
+}
+
 @media screen and (min-width: 768px) {
 
   .news-input {
     width: 50%;
   }
 
-  .navbar .navbar-nav .nav-item .nav-link {
-    padding: 0 0.5em;
-  }
+  /* .nav-item:hover {
+    background-color: #090e09;
+  } */
 
-  .navbar .navbar-nav .nav-item:not(:last-child) .nav-link {
+  /* .navbar .navbar-nav .nav-item:not(:last-child) .nav-link {
     border-right: 2px solid #646668;
-  }
+  } */
 
   .carousel-caption {
     bottom: 0px;
@@ -649,3 +686,4 @@ h1 {
     margin-top: 20px; /* adjust this value as needed */
   }
 }
+
