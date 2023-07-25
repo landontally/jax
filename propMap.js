@@ -1,6 +1,20 @@
 // Property data
 const properties = [
   {
+    id: 20,
+    name: "Lincoln Square Pancake House",
+    new: "./img/soon.png",
+    address: "2160 N. Walnut Street",
+    city: "Bloomington",
+    state: "IN",
+    zip: "47404",
+    info: "",
+    imageUrl: "./propertyimage/lsph.png",
+    webPage: "./properties/construction.html",
+    lat: 39.18600,
+    lng: -86.53413,
+  },
+  {
     id: 6,
     name: "Toppers",
     new: "./img/new.png",
@@ -265,20 +279,6 @@ const properties = [
     webPage: "./properties/construction.html",
     lat: 39.17511,
     lng: -86.56875,
-  },
-  {
-    id: 20,
-    name: "Lincoln Square Pancake House",
-    new: "",
-    address: "2160 N. Walnut Street",
-    city: "Bloomington",
-    state: "IN",
-    zip: "47404",
-    info: "",
-    imageUrl: "./propertyimage/lsph.png",
-    webPage: "./properties/construction.html",
-    lat: 39.18600,
-    lng: -86.53413,
   },
   {
     id: 21,
