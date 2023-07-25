@@ -203,7 +203,7 @@
   </div>
 
   <!-- Testimonials -->
-  <section class="testimonial-container py-0 my-3">
+  <!-- <section class="testimonial-container py-0 my-3">
     <h1 class="text-center py-0 my-0">Testimonials</h1>
     <div class="testimonial mySwiper">
       <div class="testi-content swiper-wrapper">
@@ -257,7 +257,7 @@
       <div class="swiper-button-prev nav-btn"></div>
       <div class="swiper-pagination"></div>
     </div>
-  </section>
+  </section> -->
 
     <!-- Newsletter
     <section class="bg-primary text-light py-4">
@@ -332,18 +332,18 @@
 		<!-- JS App -->
 		<script src="testimonial.js"></script>
 
-     <script>
-	     mapboxgl.accessToken = 'pk.eyJ1IjoibHRhbGx5IiwiYSI6ImNsZjhlZHhlZjF1cXgzeXBxaThkaW8wMWkifQ.DBKNmdcZSJ7crjDcnad6lg';
-       const map1 = new mapboxgl.Map({
-        container: 'map1', // container ID
-        style: 'mapbox://styles/mapbox/streets-v12', // style URL
-        center: [-86.57713, 39.156], // starting position [lng, lat], opposite of google maps
-        zoom: 12 // starting zoom
-      });
+    <script>
+      mapboxgl.accessToken = 'pk.eyJ1IjoibHRhbGx5IiwiYSI6ImNsZjhlZHhlZjF1cXgzeXBxaThkaW8wMWkifQ.DBKNmdcZSJ7crjDcnad6lg';
+      const map1 = new mapboxgl.Map({
+      container: 'map1', // container ID
+      style: 'mapbox://styles/mapbox/streets-v12', // style URL
+      center: [-86.57713, 39.156], // starting position [lng, lat], opposite of google maps
+      zoom: 12 // starting zoom
+    });
 
-      const marker1 = new mapboxgl.Marker()
-        .setLngLat([-86.5778, 39.1555])
-        .addTo(map1);
+    const marker1 = new mapboxgl.Marker()
+      .setLngLat([-86.5778, 39.1555])
+      .addTo(map1);
 
     </script>
   </body>
