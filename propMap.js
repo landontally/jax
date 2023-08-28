@@ -10,7 +10,7 @@ const properties = [
     zip: "47404",
     info: "",
     imageUrl: "./assets/propertyimage/lsph.png",
-    webPage: "./properties/construction.html",
+    webPage: "./properties/2160-N-Walnut.html",
     lat: 39.18600,
     lng: -86.53413,
   },
