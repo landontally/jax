@@ -12,6 +12,13 @@ body::before {
   padding: 0;
 }
 
+/* Swiper Library CSS */
+.swiper {
+  max-width: 60%;
+  max-height: 75%;
+}
+/* /Swiper */
+
 .container-fluid {
   padding: 0;
 }

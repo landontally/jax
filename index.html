@@ -336,12 +336,13 @@
 
     <script>
       mapboxgl.accessToken = 'pk.eyJ1IjoibHRhbGx5IiwiYSI6ImNsZjhlZHhlZjF1cXgzeXBxaThkaW8wMWkifQ.DBKNmdcZSJ7crjDcnad6lg';
+      
       const map1 = new mapboxgl.Map({
       container: 'map1', // container ID
       style: 'mapbox://styles/mapbox/streets-v12', // style URL
       center: [-86.57713, 39.156], // starting position [lng, lat], opposite of google maps
       zoom: 12 // starting zoom
-    });
+      });
 
     const marker1 = new mapboxgl.Marker()
       .setLngLat([-86.5778, 39.1555])
