@@ -2,6 +2,10 @@ const swiper = new Swiper('.swiper', {
     pagination: 'outside',
     navigation: 'outside',
 
+    zoom: {
+      maxRatio: 5,
+    },
+
     // Optional parameters
     direction: 'horizontal',
     loop: true,
