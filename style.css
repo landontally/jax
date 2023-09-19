@@ -85,14 +85,16 @@ color: crimson;
 
 .nav-link {
   width: 100%;
-  padding: 0 1em; /* Add some padding around the link text for spacing */
-  transition: border-bottom 0.3s ease; /* Add a smooth transition effect for the border-bottom */
-  position: relative; /* Add position relative to create a stacking context */
+  padding: 0 1em;
+  transition: border-bottom 0.3s ease;
+  position: relative;
+  line-height: 1; /* Set line-height to 1 to avoid unwanted vertical spacing */
+  vertical-align: middle; /* Set vertical-align to middle for vertical alignment */
 }
 
 .nav-link:hover {
-  color: #fff; /* Change the text color on hover to improve readability */
-  border-bottom: 1px solid #fff; /* Add the underline effect on hover */
+  color: #fff;
+  border-bottom: 1px solid #fff;
 }
 
 /* The Contact Us Styles */
