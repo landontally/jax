@@ -67,8 +67,8 @@
 
   <section class="mt-5">
     <h1 class="text-center property-title mb-0">At Home</h1>
-    <h1 class="text-center property-title mt-0">3175 West 3rd Street</h1>
-    <h4 class="text-center mb-3"><br> 100% Leased in Bloomington, IN</h4>
+    <h1 class="text-center property-title mt-0 mb-0">3175 West 3rd Street</h1>
+    <h4 class="text-center mb-3"> 100% Leased in Bloomington, IN</h4>
   </section>
 
     <!-- Slider main container -->
@@ -86,48 +86,47 @@
       <div class="swiper-button-next"></div>
     </div>
 
-    <div class="container">
-        <div class="row">
-          <div class="col-md-8 mx-auto text-center">
-            <hr class="my-5" style="width: 60%; margin-left: auto; margin-right: auto;">
-          </div>
-        </div>
-    </div>
-
     <!-- About Property -->
     <section id="aboutProperty" class="">
-        <div class="container">
-            <h2 class="text-center my-4" style="word-wrap: break">About the Property</h2>
-            <dl class="row">
-                <dt class="col-sm-3">Description</dt>
-                <dd class="col-sm-9"><p>3175 West 3rd is a vast retail location located at the end of the power center on W. 3rd Street.
-                  It features a large parking lot and plenty of visibility from I-69, and includes its own large pylon sign.
-                </p> </dd>
+      <div class="container">
+        <!-- <div class="col-md p-3 text-center">
+          <img src="../assets/propertyview/lincolnsquare.jpg" style="width: 75%; height: auto;" class="img-fluid rounded-5 shadow" alt="The 2310 South Hickory Leaf Drive building.">
+        </div> -->
+          <h2 class="text-center my-4" style="word-wrap: break">About the Property</h2>
+          <dl class="row">
+              <dt class="col-sm-3">Tenants</dt>
+              <dd class="col-sm-9"><p>At Home</p>
+              </dd>
 
-                <dt class="col-sm-3">Property Type</dt>
-                <dd class="col-sm-9">
-                  <p>Retail</p>
-                </dd>
+              <dt class="col-sm-3">Description</dt>
+              <dd class="col-sm-9"><p>Located just off I-69 with a large pylon sign facing both sides of the interstate, this single-tenant big-box retail building is situated in the 
+                “prime time” retail trade area of Bloomington’s westside.  Commuters and locals alike traffic the subject property, with ample parking allowing for high store traffic. A full remodel of the building was completed in 2018.  The area continues to grow, with Chipotle opening directly in front of the building in Q1 2024.</p> </dd>
 
-                <dt class="col-sm-3">Property Subtype</dt>
-                <dd class="col-sm-9">
-                  <p>Power Center</p>
-                </dd>
+              <dt class="col-sm-3">Property Type</dt>
+              <dd class="col-sm-9">
+                <p>Retail</p>
+              </dd>
 
-                <dt class="col-sm-3">Highlights</dt>
-                <dd class="col-sm-9"><p>Highly visible from I-69.</p>
-                <p>Best positioned big box on the Bloomington west side.</p>
-                <p>Large pylon sign.</p></dd>
+              <dt class="col-sm-3">Property Subtype</dt>
+              <dd class="col-sm-9">
+                <p>Big-Box Retail</p>
+              </dd>
 
-                <dt class="col-sm-3">Attachments</dt>
-                <dd class="col-sm-9">
-                  <!-- Trigger the modal with a link or button -->
-                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#pdfModal">View Brochure</button>
-                </dd>                
+              <dt class="col-sm-3">Highlights</dt>
+              <dd class="col-sm-9"><p>Off of I-69</p>
+              <p>Large pylon signage</p>
+              <p>Ample parking</p>
+              <p>Main retail trade area of Bloomington's westside</p></dd>
 
-              </dl>
-        </div>
-    </section>
+              <dt class="col-sm-3">Attachments</dt>
+              <dd class="col-sm-9">
+                <!-- Trigger the modal with a link or button -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#pdfModal">View Brochure</button>
+              </dd>                
+
+            </dl>
+      </div>
+  </section>
 
     <div class="modal fade" id="pdfModal" tabindex="-1" aria-labelledby="pdfModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-lg">
@@ -137,7 +136,7 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-            <iframe src="./pdf/2160 N. Walnut Street - Brochure.pdf" frameborder="0" width="100%" height="700px"></iframe>
+            <iframe src="./pdf/3175 W 3rd.pdf" frameborder="0" width="100%" height="700px"></iframe>
           </div>
         </div>
       </div>
@@ -196,19 +195,6 @@
             </div>
           </div>
     </section>
-
-    <!-- Newsletter -->
-    <!-- <section class="bg-primary text-light p-4" id="newsletter">
-        <div class="container">
-          <div class="d-md-flex justify-content-between align-items-center">
-            <h3 class="mb-3 mb-md-0">Sign up for our Newsletter</h3>
-            <div class="input-group news-input">
-              <input type="text" class="form-control" placeholder="Enter Email" aria-label="Email address" />
-              <button class="btn btn-dark btn-lg" type="button">Register</button>
-            </div>
-          </div>
-        </div>
-      </section> -->
   
   <!-- Contact & Map -->
   <section class="pt-4 bg-light">
@@ -285,7 +271,7 @@
       const map2 = new mapboxgl.Map({
         container: 'map2', // container ID
         style: 'mapbox://styles/mapbox/streets-v12', // style URL
-        center: [-86.53411, 39.18605], // starting position [lng, lat], opposite of google maps
+        center: [-86.57518, 39.16265], // starting position [lng, lat], opposite of google maps
         zoom: 15 // starting zoom
       });
 
@@ -294,7 +280,7 @@
         .addTo(map1);
 
       const marker2 = new mapboxgl.Marker()
-        .setLngLat([-86.53411, 39.18605])
+        .setLngLat([-86.57518, 39.16265])
         .addTo(map2);
 
     </script>
