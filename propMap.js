@@ -17,7 +17,7 @@ const properties = [
   {
     id: 32,
     name: "Academy Sports + Outdoors",
-    new: "",
+    new: "./assets/img/soon.png",
     address: "123 S. Kingston Drive",
     city: "Bloomington",
     state: "IN",
