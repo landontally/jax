@@ -67,7 +67,7 @@
 
   <section class="mt-5">
     <h1 class="text-center property-title mb-0">Travel Lobster</h1>
-    <h1 class="text-center property-title mt-0">2615-2621 E. 3rd Street</h1>
+    <h1 class="text-center property-title mt-0 mb-0">2615-2621 E. 3rd Street</h1>
     <h4 class="text-center mb-3"><br> 100% Leased in Bloomington, IN</h4>
   </section>
 
@@ -89,15 +89,10 @@
       <div class="swiper-button-next"></div>
     </div>
 
-    <!-- Title -->
-    <section class="pt-2">
-        <h4 class="text-center">xxxx SF of Office/Retail Space <br> 100% Leased in Indianapolis, IN</h4>
-    </section>
-
     <div class="container">
         <div class="row">
           <div class="col-md-8 mx-auto text-center">
-            <hr class="my-5" style="width: 60%; margin-left: auto; margin-right: auto;">
+            <hr class="my-3" style="width: 60%; margin-left: auto; margin-right: auto;">
           </div>
         </div>
     </div>
@@ -110,9 +105,16 @@
           </div> -->
             <h2 class="text-center my-4" style="word-wrap: break">About the Property</h2>
             <dl class="row">
+                <dt class="col-sm-3">Tenants</dt>
+                <dd class="col-sm-9"><p>Travel Lodge</p>
+                  <p>Red Lobster</p>
+                  <p>Jiffy Lube</p>
+                  <p>Midas</p>
+                </dd>
+
                 <dt class="col-sm-3">Description</dt>
-                <dd class="col-sm-9"><p>2160 N. Walnut is a fantastic location for any kind of dine-in experience looking to grow and develop. This iconic corner property is situated at the busiest intersection in Bloomington, with over 60,000 cars passing by every day. 
-                  The vibrant, surrounding area is also home to a variety of businesses and attractions, including Indiana University, making it a great place to draw in customers.</p> </dd>
+                <dd class="col-sm-9"><p>The corner of “Main & Main”.  East 3rd Street & College Mall Road is Bloomington’s epicenter for retail, and the subject property is on the hard corner! 
+                  Adjacent to Simon’s College Mall and Eastland Plaza, the subject property gains exposure from large national retailers mixed in with local businesses. Four (4) single-tenant buildings sit on the subject property, all with Tenants that have operated for decades.  </p> </dd>
 
                 <dt class="col-sm-3">Property Type</dt>
                 <dd class="col-sm-9">
@@ -121,13 +123,14 @@
 
                 <dt class="col-sm-3">Property Subtype</dt>
                 <dd class="col-sm-9">
-                  <p>Casual Dining</p>
+                  <p>Hospitality</p>
                 </dd>
 
                 <dt class="col-sm-3">Highlights</dt>
-                <dd class="col-sm-9"><p>Streetlight corner at North Walnut and the bypass.</p>
-                <p>Bloomington's busiest intersection.</p>
-                <p>Walking distance to IU campus.</p></dd>
+                <dd class="col-sm-9"><p>Hard streetlight corner of E. 3rd St. & College Mall Rd.</p>
+                <p>Four (4) single-tenant buildings</p>
+                <p>Longevity of existing tenants</p>
+                <p>Busy traffic</p></dd>
 
                 <dt class="col-sm-3">Attachments</dt>
                 <dd class="col-sm-9">
@@ -147,12 +150,11 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-            <iframe src="./pdf/2160 N. Walnut Street - Brochure.pdf" frameborder="0" width="100%" height="700px"></iframe>
+            <iframe src="./pdf/2615-2621 E 3rd Street.pdf" frameborder="0" width="100%" height="700px"></iframe>
           </div>
         </div>
       </div>
     </div>
-    
 
     <div class="container">
         <div class="row">
@@ -168,7 +170,7 @@
       <div class="container">
           <div class="row text-center justify-content-center">
                 <div class="col-lg-9 pr-3 pb-3">
-                  <div id="map2" style="height: 75vh" aria-label="Map displaying location of 1440 Liberty Drive, Bloomington, Indiana">
+                  <div id="map2" style="height: 75vh" aria-label="Map displaying location of 2615-2621 E. 3rd Street, Bloomington, Indiana">
                 </div>
           </div>
       </div>  
@@ -192,16 +194,16 @@
                 <img src="./logo/indiana_university.png" class="img-fluid" alt="Belle Tire">
               </div>
               <div class="col-lg-2 col-md-3 col-6">
-                <img src="./logo/mcdonalds.png" class="img-fluid" alt="Walmart">
+                <img src="./logo/Starbucks.png" class="img-fluid" alt="Walmart">
               </div>
               <div class="col-lg-2 col-md-3 col-6">
-                <img src="./logo/holiday_inn.png" class="img-fluid" alt="Rural King">
+                <img src="./logo/burger_king.png" class="img-fluid" alt="Rural King">
               </div>
               <div class="col-lg-2 col-md-3 col-6">
-                <img src="./logo/kroger.png" class="img-fluid" alt="Belle Tire">
+                <img src="./logo/cvs.png" class="img-fluid" alt="Belle Tire">
               </div>
               <div class="col-lg-2 col-md-3 col-6">
-                <img src="./logo/big_red.png" class="img-fluid" alt="Belle Tire">
+                <img src="./logo/circle_k.png" class="img-fluid" alt="Belle Tire">
               </div>
             </div>
           </div>
@@ -269,7 +271,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
             <div class="modal-body">
-                <img src="image.jpg" class="img-fluid" alt="Flyer">
+                <img src="image.jpg" class="img-fluid" alt="Brochure">
             </div>
             </div>
         </div>
@@ -295,7 +297,7 @@
       const map2 = new mapboxgl.Map({
         container: 'map2', // container ID
         style: 'mapbox://styles/mapbox/streets-v12', // style URL
-        center: [-86.53411, 39.18605], // starting position [lng, lat], opposite of google maps
+        center: [-86.49924, 39.16479], // starting position [lng, lat], opposite of google maps
         zoom: 15 // starting zoom
       });
 
@@ -304,7 +306,7 @@
         .addTo(map1);
 
       const marker2 = new mapboxgl.Marker()
-        .setLngLat([-86.53411, 39.18605])
+        .setLngLat([-86.49924, 39.16479])
         .addTo(map2);
 
     </script>
