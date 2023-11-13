@@ -67,8 +67,8 @@
 
   <section class="mt-5">
     <h1 class="text-center property-title mb-0">India Garden</h1>
-    <h1 class="text-center property-title mt-0">416 East 4th Street</h1>
-    <h4 class="text-center mb-3"> 100% Leased in Bloomington, IN</h4>
+    <h1 class="text-center property-title mt-0 mb-0">416 East 4th Street</h1>
+    <h4 class="text-center mb-3">100% Leased in Bloomington, IN</h4>
   </section>
 
     <!-- Slider main container -->
@@ -88,48 +88,48 @@
       <div class="swiper-button-next"></div>
     </div>
 
-    <div class="container">
-        <div class="row">
-          <div class="col-md-8 mx-auto text-center">
-            <hr class="my-5" style="width: 60%; margin-left: auto; margin-right: auto;">
-          </div>
-        </div>
-    </div>
-
     <!-- About Property -->
     <section id="aboutProperty" class="">
-        <div class="container">
-            <h2 class="text-center my-4" style="word-wrap: break">About the Property</h2>
-            <dl class="row">
-                <dt class="col-sm-3">Description</dt>
-                <dd class="col-sm-9"><p>416 East 4th Street is a quiant mixed-use location. Located just one block away from Indiana University,
-                  it is an attractive location near the corner of South Dunn and East 4th. This spot allows students to be regular visitors, and 
-                has found its way to be surrounded by several food locations, such as Chipotle, Kilroy's, and Five Guys. </p> </dd>
+      <div class="container">
+        <!-- <div class="col-md p-3 text-center">
+          <img src="../assets/propertyview/lincolnsquare.jpg" style="width: 75%; height: auto;" class="img-fluid rounded-5 shadow" alt="The 2310 South Hickory Leaf Drive building.">
+        </div> -->
+          <h2 class="text-center my-4" style="word-wrap: break">About the Property</h2>
+          <dl class="row">
+              <dt class="col-sm-3">Tenants</dt>
+              <dd class="col-sm-9"><p>India Garden</p>
+                <p>Two (2) Bedroom Apartment</p>
+              </dd>
 
-                <dt class="col-sm-3">Property Type</dt>
-                <dd class="col-sm-9">
-                  <p>Retail</p>
-                </dd>
+              <dt class="col-sm-3">Description</dt>
+              <dd class="col-sm-9"><p>When Forbes writes an article highlighting your street, you know something has to be good.  The subject property sits on 4th Street, aka “Global Cuisine Row”.  
+                Front patio renovations turned out stunning, along with a newly renovated two-bedroom apartment upstairs.  A dedicated parking lot behind the building is unique to the area, making the building efficient in an otherwise tight parking corridor.</p> </dd>
 
-                <dt class="col-sm-3">Property Subtype</dt>
-                <dd class="col-sm-9">
-                  <p>Casual Dining</p>
-                </dd>
+              <dt class="col-sm-3">Property Type</dt>
+              <dd class="col-sm-9">
+                <p>Mixed-use Commercial</p>
+              </dd>
 
-                <dt class="col-sm-3">Highlights</dt>
-                <dd class="col-sm-9"><p>Mixed-use building.</p>
-                <p>Located one block away from the Indiana University campus.</p>
-                <p>Has a private dedicated parking lot attached.</p></dd>
+              <dt class="col-sm-3">Property Subtype</dt>
+              <dd class="col-sm-9">
+                <p>Casual Dining, Residential</p>
+              </dd>
 
-                <dt class="col-sm-3">Attachments</dt>
-                <dd class="col-sm-9">
-                  <!-- Trigger the modal with a link or button -->
-                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#pdfModal">View Brochure</button>
-                </dd>                
+              <dt class="col-sm-3">Highlights</dt>
+              <dd class="col-sm-9"><p>1.25 blocks from the IU campus</p>
+              <p>Dedicated parking lot</p>
+              <p>High pedestrian traffic</p>
+              <p>Large patio</p></dd>
 
-              </dl>
-        </div>
-    </section>
+              <dt class="col-sm-3">Attachments</dt>
+              <dd class="col-sm-9">
+                <!-- Trigger the modal with a link or button -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#pdfModal">View Brochure</button>
+              </dd>                
+
+            </dl>
+      </div>
+  </section>
 
     <div class="modal fade" id="pdfModal" tabindex="-1" aria-labelledby="pdfModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-lg">
@@ -139,7 +139,7 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-            <iframe src="./pdf/2160 N. Walnut Street - Brochure.pdf" frameborder="0" width="100%" height="700px"></iframe>
+            <iframe src="./pdf/416 E 4th.pdf" frameborder="0" width="100%" height="700px"></iframe>
           </div>
         </div>
       </div>
@@ -287,7 +287,7 @@
       const map2 = new mapboxgl.Map({
         container: 'map2', // container ID
         style: 'mapbox://styles/mapbox/streets-v12', // style URL
-        center: [-86.53411, 39.18605], // starting position [lng, lat], opposite of google maps
+        center: [-86.52900, 39.16553], // starting position [lng, lat], opposite of google maps
         zoom: 15 // starting zoom
       });
 
@@ -296,7 +296,7 @@
         .addTo(map1);
 
       const marker2 = new mapboxgl.Marker()
-        .setLngLat([-86.53411, 39.18605])
+        .setLngLat([-86.52900, 39.16553])
         .addTo(map2);
 
     </script>
