@@ -31,7 +31,7 @@
   <body>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+  <nav class="navbar navbar-expand-xl bg-dark navbar-dark py-3 fixed-top">
     <div class="container">
       <a href="index.html" class="navbar-brand"><span>Krane</span> Properties</a>
 
@@ -50,19 +50,33 @@
       <div class="collapse navbar-collapse" id="navmenu">
           <ul class="navbar-nav ms-auto">
               <li class="nav-item">
+                <button type="button" class="btn btn-dark">
                   <a href="index.html" class="nav-link active">Home</a>
+                </button>
               </li>
               <li class="nav-item">
-                  <a href="about.html" class="nav-link" aria-current="page">About Us</a>
+                  <button type="button" class="btn btn-dark">
+                    <a href="about.html" class="nav-link" aria-current="page">About Us</a>
+                  </button>
+              </li>
+              <li class="nav-item dropdown">
+                  <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a href="#" class="nav-link">Properties</a>
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="properties.html">Our Properties</a></li>
+                    <li><a class="dropdown-item" href="/properties/construction.html">Properties for Lease</a></li>
+                  </ul>
               </li>
               <li class="nav-item">
-                  <a href="properties.html" class="nav-link">Properties</a>
+                  <button type="button" class="btn btn-dark">
+                    <a href="contact.html" class="nav-link">Propose a Deal</a>
+                  </button>
               </li>
               <li class="nav-item">
-                  <a href="contact.html" class="nav-link">Contact Us</a>
-              </li>
-              <li class="nav-item">
-                <a href="tel:+18123341936" class="nav-link">Call (812) 334-1936</a>
+                  <button type="button" class="btn btn-dark">
+                    <a href="tel:+18123341936" class="nav-link">Call (812) 334-1936</a>
+                  </button>
               </li>
           </ul>
       </div>
@@ -91,11 +105,10 @@
         <div class="carousel-item" data-bs-interval="7000" aria-label="Team Carousel" aria-describedby="carousel-description-2">
           <img alt="..." class="d-block w-100 h-100" src="./assets/propertyview/3600_3rd.jpeg" style="object-fit: cover;">
           <div class="carousel-caption">
-              <h5 id="carousel-heading-2" class="animate__animated animate__fadeInDown delay-1s">Our Team</h5>
+              <h5 id="carousel-heading-2" class="animate__animated animate__fadeInDown delay-1s">Properties for Lease</h5>
               <p id="carousel-description-2" class="animate__animated animate__fadeInUp d-none d-lg-block delay-2s">
-                Our goal is to create a welcoming environment where everyone feels at home, whether you're working or just passing 
-                through our properties.</p>
-              <p class="animate__animated animate__fadeInUp carousel-button delay-3s"><a href="about.html#OurTeam">Learn More</a></p>
+                If you're looking for a new place for your business, look no further than here.</p>
+              <p class="animate__animated animate__fadeInUp carousel-button delay-3s"><a href="available.html">Learn More</a></p>
           </div>
         </div>
         <div class="carousel-item" data-bs-interval="7000" aria-labelledby="Lease Carousel" aria-describedby="carousel-description-3">
@@ -151,7 +164,7 @@
                 Experience irresistible flavors that will leave you craving for more, making every bite a slice of pizza paradise.
               </p>
               <div class="text-center mt-auto">
-                <a href="./properties/construction.html" class="btn btn-primary" aria-label="Learn more about this new property">Learn More</a>
+                <a href="./properties/212-S-Indiana.html" class="btn btn-primary" aria-label="Learn more about this new property">Learn More</a>
               </div>
             </div>
           </div>
