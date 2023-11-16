@@ -63,7 +63,6 @@ ul.border {
 
 .navbar-nav a {
 font-size: 15px;
-/* text-transform: uppercase; */
 font-weight: 400;
 }
 
@@ -83,39 +82,47 @@ color: crimson
 color: crimson;
 }
 
-.nav-link {
+ .nav-link {
   width: 100%;
   font-size: 18px;
   transition: border-bottom 0.3s ease;
   position: relative;
-  line-height: 1; /* Set line-height to 1 to avoid unwanted vertical spacing */
-  vertical-align: middle; /* Set vertical-align to middle for vertical alignment */
-  display: inline-block; /* Change display to inline-block */
+  line-height: 1; 
+  vertical-align: baseline; 
+  display: inline-block; 
   transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
   transition-duration: 400ms;
   transition-property: color;
-}
+} 
 
-.nav-link::after {
+ .nav-link::after {
   content: '';
   position: absolute;
   width: 0;
   height: 2px;
-  background-color: #fff; /* or any color you prefer for the underline */
-  bottom: -5px; /* adjust as needed */
+  background-color: #fff; 
+  bottom: -5px; 
   left: 0;
   transition: width 0.3s;
-}
+} 
 
 .nav-link:hover {
   color: #fff;
   font-weight: 500;
 }
 
-.nav-link:hover::after {
+ .nav-link:hover::after {
   width: 100%;
   left: 0%;
+} 
+
+/* Custom styles for the dropdown button in nav */
+.nav-item.dropdown .dropdown-toggle {
+  width: auto; /* Adjust width as needed */
+  padding-right: 30px; /* Provide enough space for the dropdown arrow */
+  /* Other styling adjustments if needed */
 }
+
 
 /* The Contact Us Styles */
 
@@ -539,53 +546,6 @@ transform: translate3d(0, 0, 0)
 background-image: url('img/detective.jpg');
 }
 
-@media screen and (max-width: 1200) {
-  .navbar .navbar-nav .nav-item {
-    display: flex;
-  }
-
-  .navbar-nav .nav-item {
-    margin-bottom: 20px;
-  }
-
-  .navbar-nav .nav-link {
-    padding: 10px;
-  }
-
-  .navbar .navbar-collapse {
-    display: flex !important;
-    flex-basis: 100%;
-    justify-content: center;
-  }
-
-  .navbar .navbar-nav .nav-item .nav-link {
-    padding: 0 0.5em;
-  }
-}
-
-@media screen and (min-width: 768px) {
-
-  .news-input {
-    width: 50%;
-  }
-
-  .carousel-caption {
-    bottom: 0px;
-    top: 50%;
-    z-index: 2;
-    transform: translateY(-50%);
-  }
-
-  .carousel-caption a {
-    padding: 10px 25px;
-    font-size: 15px;
-  }
-
-  .single-team {
-    margin-bottom: 30px;
-  }
-}
-
 /* Testimonial CSS */
 
 .testimonial-container {
@@ -659,16 +619,32 @@ h1 {
   color: #333;
 }
 /* swiper button css */
+
+.swiper-slide {
+  height: 70vh;
+  width: auto;
+}
+
+/* Changing the color of the arrows */
+.swiper-button-next, .swiper-button-prev {
+  color: #ffffff; /* Change to your desired color */
+}
+
+/* If the arrows are using background-images (common in Swiper) */
+.swiper-button-next:after, .swiper-button-prev:after {
+  color: #ffffff; /* Change to your desired color */
+}
+
 .nav-btn {
   height: 40px;
   width: 40px;
   border-radius: 50%;
   transform: translateY(30px);
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(253, 253, 253, 0.1);
   transition: 0.2s;
 }
 .nav-btn:hover {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.2);
 }
 .nav-btn::after,
 .nav-btn::before {
@@ -676,10 +652,10 @@ h1 {
   color: #fff;
 }
 .swiper-pagination-bullet {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(255, 255, 255, 0.8);
 }
 .swiper-pagination-bullet-active {
-  background-color: #4070f4;
+  background-color: #ffffff;
 }
 
 @media (max-width: 767px){
@@ -689,6 +665,10 @@ h1 {
     margin-bottom: 20px;
     height: 50%;
     width: 100%;
+  }
+
+  .swiper-slide {
+    height: 35vh;
   }
 
   .carousel-caption h5 {
@@ -718,6 +698,65 @@ h1 {
   .testi-slide p {
     font-size: 12px;
     padding: 0 10px;
+  }
+}
+
+@media screen and (max-width: 1200) {
+  .navbar .navbar-nav .nav-item {
+    display: flex;
+  }
+
+  .navbar-nav .nav-item {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .navbar-nav .nav-link {
+    padding: 10px;
+  }
+
+  .navbar .navbar-collapse {
+    display: flex !important;
+    flex-basis: 100%;
+    justify-content: center;
+  }
+
+  .navbar .navbar-nav .nav-item .nav-link {
+    padding: 0 0.5em;
+  }
+
+  .swiper-slide {
+    height: 50vh;
+  }
+}
+
+@media screen and (min-width: 768px) {
+
+  .news-input {
+    width: 50%;
+  }
+
+  .carousel-caption {
+    bottom: 0px;
+    top: 50%;
+    z-index: 2;
+    transform: translateY(-50%);
+  }
+
+  .carousel-caption a {
+    padding: 10px 25px;
+    font-size: 15px;
+  }
+
+  .single-team {
+    margin-bottom: 30px;
+  }
+}
+
+/* Adjust height for very small screens */
+@media (max-width: 480px) {
+  .swiper-slide {
+      height: 30vh;
   }
 }
 
