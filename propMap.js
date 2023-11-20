@@ -305,8 +305,8 @@ const properties = [
     info: "",
     imageUrl: "./assets/propertyimage/hickory.jpg",
     webPage: "./properties/2310-S-Hickory.html",
-    lat: 39.20190,
-    lng: -85.91406,
+    lat: 39.14465,
+    lng: -86.57813,
   },
   {
     id: 23,
@@ -403,8 +403,8 @@ const properties = [
     info: "",
     imageUrl: "./assets/propertyimage/bigredliquors.jpg",
     webPage: "./properties/3207-E-3rd.html",
-    lat: 39.20190,
-    lng: -85.91406,
+    lat: 39.16464,
+    lng: -86.49153,
   },
   {
     id: 31,
