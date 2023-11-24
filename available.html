@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="At our Indiana-based commercial real estate firm, we're dedicated to helping local businesses thrive. Let us help you find the perfect property for your needs.">
+    <meta name="keywords" content="commercial real estate, office space, retail space, leasing, Indiana, Bloomington, Indianapolis, commercial property">
+    <meta name="author" content="Landon Tally, Tally Designs">
+    <meta name="robots" content="index, follow">
+
+	<!-- Styles -->
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+
+	<!-- Leaflet -->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+     integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+     crossorigin=""/>
+	<link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder@1.13.0/dist/Control.Geocoder.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.css" integrity="sha512-mQ77VzAakzdpWdgfL/lM1ksNy89uFgibRQANsNneSTMD/bj0Y/8+94XMwYhnbzx8eki2hrbPpDm0vD0CiT2lcg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.Default.css" integrity="sha512-6ZCLMiYwTeli2rVh3XAPxy3YoR5fVxGdH/pz+KMCzRY2M65Emgkw00Yqmhh8qLGeYQ3LbVZGdmOX9KUjSKr0TA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<!-- Mapbox -->
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' rel='stylesheet' />
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js'></script>
+
+	<!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Indiana Commercial Real Estate Properties | Krane Properties</title>
+  </head>
+  <body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-xl bg-dark navbar-dark py-3 fixed-top">
+    <div class="container">
+      <a href="index.html" class="navbar-brand"><span>Krane</span> Properties</a>
+
+      <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+          aria-controls="navmenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+      >
+          <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <button type="button" class="btn btn-dark">
+                  <a href="index.html" class="nav-link">Home</a>
+                </button>
+              </li>
+              <li class="nav-item">
+                  <button type="button" class="btn btn-dark">
+                    <a href="about.html" class="nav-link" aria-current="page">About Us</a>
+                  </button>
+              </li>
+              <li class="nav-item dropdown">
+                  <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a href="#" class="nav-link active">Properties</a>
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="properties.html">Our Properties</a></li>
+                    <li><a class="dropdown-item" href="/properties/construction.html">Properties for Lease</a></li>
+                  </ul>
+              </li>
+              <li class="nav-item">
+                  <button type="button" class="btn btn-dark">
+                    <a href="contact.html" class="nav-link">Propose a Deal</a>
+                  </button>
+              </li>
+              <li class="nav-item">
+                  <button type="button" class="btn btn-dark">
+                    <a href="tel:+18123341936" class="nav-link">Call (812) 334-1936</a>
+                  </button>
+              </li>
+          </ul>
+      </div>
+    </div>
+  </nav>
+
+		<!-- Map and Property List -->  
+		<section class="p-5">
+			<div class="row">
+				<div class="col-lg-9 pr-3 pb-3">
+					<div id="mapid" style="height: 75vh"></div>
+				</div>
+				<div class="col-lg-3 pt-1 pb-3 overflow-auto property-list-container border" style="height: 75vh">
+					<h3 class="text-center pt-1">Properties</h3>
+					<ul id="property-list" class="list-group list-group-flush"> 
+					</ul>
+				</div>
+			</div>
+		</section>
+		  
+		<!-- Scripts -->
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		
+		<!-- Leaflet -->
+		<script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+			integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+			crossorigin=""></script>		  
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/leaflet.markercluster.js" integrity="sha512-OFs3W4DIZ5ZkrDhBFtsCP6JXtMEDGmhl0QPlmWYBJay40TT1n3gt2Xuw8Pf/iezgW9CdabjkNChRqozl/YADmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script src="https://unpkg.com/leaflet-control-geocoder@1.13.0/dist/Control.Geocoder.js"></script>
+
+		<!-- JS App -->
+		<script src="propAvail.js"></script>
+
+		<!-- Mapbox -->
+		<script>
+		var mymap = new L.Map('mymap', {
+		layers: [
+			new L.TileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+				'attribution': 'Map data © <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
+				})
+			],
+			center: [0, 0],
+			zoom: 0
+			});
+		</script>
+	</body>
+</html>
