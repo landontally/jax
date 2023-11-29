@@ -2,17 +2,17 @@
 const properties = [
     {
       id: 22,
-      name: "Riviera Maya",
+      name: "Available",
       new: "",
-      address: "116 S. Franklin Road",
+      address: "2310 South Hickory Leaf Drive",
       city: "Bloomington",
       state: "IN",
-      zip: "47404",
+      zip: "47403",
       info: "",
-      imageUrl: "./assets/propertyimage/rivieramaya.jpg",
-      webPage: "./properties/116-S-Franklin.html",
-      lat: 39.16741,
-      lng: -86.57157,
+      imageUrl: "./assets/propertyimage/hickory.jpg",
+      webPage: "./properties/2310-S-Hickory.html",
+      lat: 39.14467,
+      lng: -86.57964,
     },
   ];
   
