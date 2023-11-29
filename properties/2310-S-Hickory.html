@@ -27,48 +27,63 @@
   </head>
   <body>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
-      <div class="container">
-        <a href="/index.html" class="navbar-brand"><span>Kamen</span> Real Estate</a>  
-          <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navmenu"
-              aria-controls="navmenu"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-          >
-              <span class="navbar-toggler-icon"></span>
-          </button>
-  
-          <div class="collapse navbar-collapse" id="navmenu">
-              <ul class="navbar-nav ms-auto">
-                  <li class="nav-item">
-                      <a href="../index.html" class="nav-link">Home</a>
-                  </li>
-                  <li class="nav-item">
-                      <a href="../about.html" class="nav-link">About Us</a>
-                  </li>
-                  <li class="nav-item">
-                      <a href="../properties.html" class="nav-link">Properties</a>
-                  </li>
-                  <li class="nav-item">
-                      <a href="../contact.html" class="nav-link">Contact Us</a>
-                  </li>
-                  <li class="nav-item">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-xl bg-dark navbar-dark py-3 fixed-top">
+    <div class="container">
+      <a href="index.html" class="navbar-brand"><span>Krane</span> Properties</a>
+
+      <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+          aria-controls="navmenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+      >
+          <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <button type="button" class="btn btn-dark">
+                  <a href="index.html" class="nav-link">Home</a>
+                </button>
+              </li>
+              <li class="nav-item">
+                  <button type="button" class="btn btn-dark">
+                    <a href="about.html" class="nav-link" aria-current="page">About Us</a>
+                  </button>
+              </li>
+              <li class="nav-item dropdown">
+                  <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a href="#" class="nav-link">Properties</a>
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="properties.html">Our Properties</a></li>
+                    <li><a class="dropdown-item" href="available.html">Properties for Lease</a></li>
+                  </ul>
+              </li>
+              <li class="nav-item">
+                  <button type="button" class="btn btn-dark">
+                    <a href="contact.html" class="nav-link">Propose a Deal</a>
+                  </button>
+              </li>
+              <li class="nav-item">
+                  <button type="button" class="btn btn-dark">
                     <a href="tel:+18123341936" class="nav-link">Call (812) 334-1936</a>
-                  </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+                  </button>
+              </li>
+          </ul>
+      </div>
+    </div>
+  </nav>
 
   <section class="mt-5">
-    <h1 class="text-center property-title mb-0">Available (needs work)</h1>
-    <h1 class="text-center property-title mt-0">2310 South Hickory</h1>
-    <h4 class="text-center mb-3"><br> 100% Available in Bloomington, IN</h4>
+    <h1 class="text-center property-title mb-0">Available</h1>
+    <h1 class="text-center property-title mt-0 mb-0">2310 South Hickory Leaf Drive</h1>
+    <h4 class="text-center mb-3"> 100% Available in Bloomington, IN</h4>
   </section>
 
     <!-- Slider main container -->
@@ -177,36 +192,23 @@
         <div class="container mx-auto mt-3">
             <div class="row row-cols-1 row-cols-md-4 row-cols-lg-5 g-4 text-center justify-content-center">
               <div class="col-lg-2 col-md-3 col-6">
-                <img src="./logo/indiana_university.png" class="img-fluid" alt="IU">
+                <img src="./logo/Sams_Club.jpg" class="img-fluid" alt="Sam's Club">
+              </div>
+              <div class="col-lg-2 col-md-3 col-6">
+                <img src="./logo/Walmart_logo.jpg" class="img-fluid" alt="Walmart">
               </div>
               <div class="col-lg-2 col-md-3 col-6">
                 <img src="./logo/ALDI.png" class="img-fluid" alt="Aldi">
               </div>
               <div class="col-lg-2 col-md-3 col-6">
-                <img src="./logo/cvs.png" class="img-fluid" alt="CVS">
+                <img src="./logo/steak_and_shake.png" class="img-fluid" alt="Steak and Shake">
               </div>
               <div class="col-lg-2 col-md-3 col-6">
-                <img src="./logo/bestbuy.png" class="img-fluid" alt="Best Buy">
-              </div>
-              <div class="col-lg-2 col-md-3 col-6">
-                <img src="./logo/chick_fil_a.png" class="img-fluid" alt="Chick Fil A">
+                <img src="./logo/Starbucks.png" class="img-fluid" alt="Starbucks">
               </div>
             </div>
           </div>
     </section>
-
-    <!-- Newsletter -->
-    <!-- <section class="bg-primary text-light p-4" id="newsletter">
-        <div class="container">
-          <div class="d-md-flex justify-content-between align-items-center">
-            <h3 class="mb-3 mb-md-0">Sign up for our Newsletter</h3>
-            <div class="input-group news-input">
-              <input type="text" class="form-control" placeholder="Enter Email" aria-label="Email address" />
-              <button class="btn btn-dark btn-lg" type="button">Register</button>
-            </div>
-          </div>
-        </div>
-      </section> -->
   
   <!-- Contact & Map -->
   <section class="pt-4 bg-light">
@@ -283,7 +285,7 @@
       const map2 = new mapboxgl.Map({
         container: 'map2', // container ID
         style: 'mapbox://styles/mapbox/streets-v12', // style URL
-        center: [-86.53411, 39.18605], // starting position [lng, lat], opposite of google maps
+        center: [-86.57800, 39.14466], // starting position [lng, lat], opposite of google maps
         zoom: 15 // starting zoom
       });
 
@@ -292,7 +294,7 @@
         .addTo(map1);
 
       const marker2 = new mapboxgl.Marker()
-        .setLngLat([-86.53411, 39.18605])
+        .setLngLat([-86.57800, 39.14466])
         .addTo(map2);
 
     </script>
