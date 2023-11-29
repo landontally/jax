@@ -11,8 +11,8 @@ const properties = [
       info: "",
       imageUrl: "./assets/propertyimage/hickory.jpg",
       webPage: "./properties/2310-S-Hickory.html",
-      lat: 39.14467,
-      lng: -86.57964,
+      lat: 39.14450,
+      lng: -86.57800,
     },
   ];
   
