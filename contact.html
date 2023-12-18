@@ -92,7 +92,28 @@
 
           <div class="col-12 col-md-6 rounded-end-5 bg-dark text-light py-3">
             <h1 class="text-center">Interested in a property? Let us know!</h1>
-            <form name="contact" method="post" id="contact-form" data-netlify="true" netlify-honeypot="bot-field">
+            <form name="contact" method="POST" data-netlify="true">
+              <p>
+                <label>Your Name: <input type="text" name="name" /></label>
+              </p>
+              <p>
+                <label>Your Email: <input type="email" name="email" /></label>
+              </p>
+              <p>
+                <label>Your Role: <select name="role[]" multiple>
+                  <option value="leader">Leader</option>
+                  <option value="follower">Follower</option>
+                </select></label>
+              </p>
+              <p>
+                <label>Message: <textarea name="message"></textarea></label>
+              </p>
+              <p>
+                <button type="submit">Send</button>
+              </p>
+            </form>
+            
+            <!-- <form name="contact" method="post" id="contact-form" data-netlify="true" netlify-honeypot="bot-field">
               <input type="hidden" name="form-name" value="contact" />
               <div class="mb-3">
                 <label for="name" class="form-label">Full Name</label>
@@ -111,7 +132,7 @@
                 <textarea class="form-control" placeholder="Your message" name="message" id="message"></textarea>
               </div>
               <button class="btn btn-light" type="submit">Send Email</button>
-            </form>
+            </form> -->
             <div id="status-message"></div>
           </div>
         </div>
