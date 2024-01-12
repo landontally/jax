@@ -1,0 +1,39 @@
+{
+  "name": "strapi-plugin-netlify-deployments",
+  "version": "2.0.2",
+  "description": "Strapi v4 plugin to trigger and monitor a deployment on Netlify",
+  "repository": "https://github.com/jclusso/strapi-plugin-netlify-deployments.git",
+  "author": "Jarrett Lusso <jclusso@gmail.com>",
+  "license": "MIT",
+  "strapi": {
+    "name": "netlify-deployments",
+    "displayName": "Netlify Deployments",
+    "description": "Plugin to trigger the deploy of a website hosted on Netlify.",
+    "kind": "plugin"
+  },
+  "maintainers": [
+    {
+      "name": "Jarrett Lusso",
+      "email": "jclusso@gmail.com"
+    }
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "engines": {
+    "node": ">=12.x.x <=20.x.x",
+    "npm": ">=6.0.0"
+  },
+  "dependencies": {
+    "@strapi/strapi": "^4.1.9",
+    "axios": "^0.26.1",
+    "react-intl": "^5.25.1"
+  },
+  "keywords": [
+    "strapi",
+    "strapi-plugin",
+    "strapi-v4",
+    "plugin",
+    "netlify"
+  ]
+}
