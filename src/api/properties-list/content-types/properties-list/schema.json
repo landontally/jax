@@ -1,0 +1,55 @@
+{
+  "kind": "collectionType",
+  "collectionName": "properties_lists",
+  "info": {
+    "singularName": "properties-list",
+    "pluralName": "properties-lists",
+    "displayName": "Properties List"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "propertyID": {
+      "type": "uid"
+    },
+    "propertyName": {
+      "type": "string"
+    },
+    "propertyAddress": {
+      "type": "string"
+    },
+    "propertyCity": {
+      "type": "string"
+    },
+    "propertyState": {
+      "type": "string"
+    },
+    "propertyZip": {
+      "type": "string"
+    },
+    "propertyInfo": {
+      "type": "text"
+    },
+    "propertyImage": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "propertyURL": {
+      "type": "string"
+    },
+    "PropertyLat": {
+      "type": "string"
+    },
+    "PropertyLng": {
+      "type": "string"
+    }
+  }
+}
