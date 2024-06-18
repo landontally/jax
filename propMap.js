@@ -165,7 +165,7 @@ const properties = [
     info: "",
     imageUrl: "./assets/propertyimage/carmel.jpg",
     webPage: "./properties/545-S-Rangeline.html",
-    lat: 39.97358,
+    lat: 39.9733,
     lng: -86.12653,
   },
   {
@@ -182,7 +182,7 @@ const properties = [
     lat: 39.17478,
     lng: -86.52730,
   },
-  {
+/*   {
     id: 54,
     name: "Phillips 66",
     new: "",
@@ -195,7 +195,7 @@ const properties = [
     webPage: "./properties/construction.html",
     lat: 39.20190,
     lng: -85.91406,
-  },
+  }, */
   {
     id: 18,
     name: "Village Pantry",
@@ -219,7 +219,7 @@ const properties = [
     state: "IN",
     zip: "47401",
     info: "",
-    imageUrl: "./assets/propertyimage/",
+    imageUrl: "./assets/propertyimage/sunsethillfence.jpg",
     webPage: "./properties/construction.html",
     lat: 39.15971,
     lng: -86.55564,
@@ -347,8 +347,8 @@ const properties = [
     info: "",
     imageUrl: "./assets/propertyimage/therapyone.jpg",
     webPage: "./properties/2411-S-Curry.html",
-    lat: 39.14340,
-    lng: -86.58222,
+    lat: 39.1432,
+    lng: -86.5823,
   },
   {
     id: 3,
@@ -404,7 +404,7 @@ const properties = [
     imageUrl: "./assets/propertyimage/bigredliquors.jpg",
     webPage: "./properties/3207-E-3rd.html",
     lat: 39.16464,
-    lng: -86.49153,
+    lng: -86.4925,
   },
   {
     id: 31,
@@ -422,7 +422,7 @@ const properties = [
   },
   {
     id: 13,
-    name: "Lama Office",
+    name: "Mavon Salon + American Midwest",
     new: "",
     address: "4201 E. 3rd Street",
     city: "Bloomington",
@@ -432,7 +432,7 @@ const properties = [
     imageUrl: "./assets/propertyimage/lamaoffice.jpg",
     webPage: "./properties/4201-E-3rd.html",
     lat: 39.16466,
-    lng: -86.47789,
+    lng: -86.47817,
   },
   {
     id: 45,
@@ -445,8 +445,8 @@ const properties = [
     info: "",
     imageUrl: "./assets/propertyimage/pxg.jpg",
     webPage: "./properties/6091-E-82nd.html",
-    lat: 39.90534,
-    lng: -86.06668,
+    lat: 39.90480,
+    lng: -86.0615,
   },
   {
     id: 48,
@@ -473,8 +473,8 @@ const properties = [
     info: "",
     imageUrl: "./assets/propertyimage/villagepantry-indy.jpg",
     webPage: "./properties/9550-Hague.html",
-    lat: 39.92688,
-    lng: -86.02682,
+    lat: 39.9266,
+    lng: -86.0269,
   },
   {
     id: 50,
@@ -499,7 +499,7 @@ const properties = [
     state: "IN",
     zip: "46236",
     info: "",
-    imageUrl: "./assets/propertyimage/nora.jpg",
+    imageUrl: "./assets/propertyimage/noraurgentcare.jpeg",
     webPage: "./properties/10950-Pendleton.html",
     lat: 39.86284,
     lng: -85.97338,
@@ -513,7 +513,7 @@ const properties = [
     state: "IN",
     zip: "46038",
     info: "",
-    imageUrl: "./assets/propertyimage/g5autosales.jpg",
+    imageUrl: "./assets/propertyimage/g5autosales.jpeg",
     webPage: "./properties/11544-Allisonville.html",
     lat: 39.95363,
     lng: -86.04181,
@@ -527,9 +527,9 @@ const properties = [
     state: "IN",
     zip: "46060",
     info: "",
-    imageUrl: "./assets/propertyimage/circlek.jpg",
+    imageUrl: "./assets/propertyimage/circlek-noblesville.jpg",
     webPage: "./properties/14554-Herriman.html",
-    lat: 40.00015,
+    lat: 40.00025,
     lng: -86.00485,
   },
 ];
