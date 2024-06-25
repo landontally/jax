@@ -30,244 +30,246 @@
   </head>
   <body>
 
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-xl bg-dark navbar-dark py-3 fixed-top">
-    <div class="container">
-      <a href="index.html" class="navbar-brand"><span>Krane</span> Properties</a>
 
-      <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navmenu"
-          aria-controls="navmenu"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-      >
-          <span class="navbar-toggler-icon"></span>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-xl bg-dark navbar-dark py-3 fixed-top">
+      <div class="container">
+        <a href="index.html" class="navbar-brand"><span>Krane</span> Properties</a>
+        
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navmenu"
+            aria-controls="navmenu"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navmenu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <button type="button" class="btn btn-dark">
+                    <a href="index.html" class="nav-link active">Home</a>
+                  </button>
+                </li>
+                <li class="nav-item">
+                    <button type="button" class="btn btn-dark">
+                      <a href="about.html" class="nav-link" aria-current="page">About Us</a>
+                    </button>
+                </li>
+                <li class="nav-item dropdown">
+                    <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      <a href="#" class="nav-link">Properties</a>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                      <li><a class="dropdown-item" href="properties.html">Our Properties</a></li>
+                      <li><a class="dropdown-item" href="available.html">Properties for Lease</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <button type="button" class="btn btn-dark">
+                      <a href="contact.html" class="nav-link">Propose a Deal</a>
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <button type="button" class="btn btn-dark">
+                      <a href="tel:+18123341936" class="nav-link">Call (812) 334-1936</a>
+                    </button>
+                </li>
+            </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <!-- Carousel -->
+    <div class="carousel slide" data-bs-ride="carousel" id="carouselExampleIndicators">
+      <div class="carousel-indicators">
+          <!-- Formatted buttons for better readability -->
+          <button aria-label="Slide 1" class="active" data-bs-slide-to="0" data-bs-target="#carouselExampleIndicators" type="button"></button>
+          <button aria-label="Slide 2" data-bs-slide-to="1" data-bs-target="#carouselExampleIndicators" type="button"></button>
+          <button aria-label="Slide 3" data-bs-slide-to="2" data-bs-target="#carouselExampleIndicators" type="button"></button>
+      </div>
+      <div class="carousel-inner">
+          <!-- Added data-bs-interval attribute to the parent carousel-inner div to avoid repeating it for every carousel-item -->
+          <div class="carousel-item active" data-bs-interval="7000" aria-label="Properties Carousel" aria-describedby="carousel-description-1">
+            <img alt="Cityscape view of one of our properties" class="d-block w-100 h-100" src="./assets/propertyview/dunkirk_square (3).JPG" style="object-fit: cover;">
+            <div class="carousel-caption">
+              <h5 id="carousel-heading-1" class="animate__animated animate__fadeInDown delay-1s">Our Properties</h5>
+              <p id="carousel-description-1" class="animate__animated animate__fadeInUp d-none d-lg-block delay-2s">
+                Discover the beauty and potential of our properties, and let us help you bring your vision to life.</p>
+              <p class="animate__animated animate__fadeInUp carousel-button delay-3s"><a href="properties.html">Learn More</a></p>
+            </div>
+          </div>   
+          <div class="carousel-item" data-bs-interval="7000" aria-label="Team Carousel" aria-describedby="carousel-description-2">
+            <img alt="..." class="d-block w-100 h-100" src="./assets/propertyview/3600_3rd.jpeg" style="object-fit: cover;">
+            <div class="carousel-caption">
+                <h5 id="carousel-heading-2" class="animate__animated animate__fadeInDown delay-1s">Properties for Lease</h5>
+                <p id="carousel-description-2" class="animate__animated animate__fadeInUp d-none d-lg-block delay-2s">
+                  If you're looking for a new place for your business, look no further than here.</p>
+                <p class="animate__animated animate__fadeInUp carousel-button delay-3s"><a href="available.html">Learn More</a></p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="7000" aria-labelledby="Lease Carousel" aria-describedby="carousel-description-3">
+            <img alt="..." class="d-block w-100 h-100" src="./assets/propertyview/circle_k (3).JPG" style="object-fit: cover;">
+            <div class="carousel-caption">
+                <h5 id="carousel-heading-3" class="animate__animated animate__fadeInDown delay-1s">Newest Tenants</h5>
+                <p id="carousel=-description-3" class="animate__animated animate__fadeInUp d-none d-lg-block delay-2s">
+                  Take a look at the newest tenants to have joined our family.</p>
+                <p class="animate__animated animate__fadeInUp carousel-button delay-3s"><a href="#newProperties">Learn More</a></p>
+            </div>
+        </div>
+      </div>
+      <!-- Formatted buttons for better readability -->
+      <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselExampleIndicators" type="button">
+          <span aria-hidden="true" class="carousel-control-prev-icon"></span>
+          <span class="visually-hidden">Previous</span>
       </button>
-
-      <div class="collapse navbar-collapse" id="navmenu">
-          <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <button type="button" class="btn btn-dark">
-                  <a href="index.html" class="nav-link active">Home</a>
-                </button>
-              </li>
-              <li class="nav-item">
-                  <button type="button" class="btn btn-dark">
-                    <a href="about.html" class="nav-link" aria-current="page">About Us</a>
-                  </button>
-              </li>
-              <li class="nav-item dropdown">
-                  <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                    <a href="#" class="nav-link">Properties</a>
-                  </button>
-                  <ul class="dropdown-menu dropdown-menu-dark">
-                    <li><a class="dropdown-item" href="properties.html">Our Properties</a></li>
-                    <li><a class="dropdown-item" href="available.html">Properties for Lease</a></li>
-                  </ul>
-              </li>
-              <li class="nav-item">
-                  <button type="button" class="btn btn-dark">
-                    <a href="contact.html" class="nav-link">Propose a Deal</a>
-                  </button>
-              </li>
-              <li class="nav-item">
-                  <button type="button" class="btn btn-dark">
-                    <a href="tel:+18123341936" class="nav-link">Call (812) 334-1936</a>
-                  </button>
-              </li>
-          </ul>
-      </div>
+      <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carouselExampleIndicators" type="button">
+        <span aria-hidden="true" class="carousel-control-next-icon"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-  </nav>
+    
 
-  <!-- Carousel -->
-  <div class="carousel slide" data-bs-ride="carousel" id="carouselExampleIndicators">
-    <div class="carousel-indicators">
-        <!-- Formatted buttons for better readability -->
-        <button aria-label="Slide 1" class="active" data-bs-slide-to="0" data-bs-target="#carouselExampleIndicators" type="button"></button>
-        <button aria-label="Slide 2" data-bs-slide-to="1" data-bs-target="#carouselExampleIndicators" type="button"></button>
-        <button aria-label="Slide 3" data-bs-slide-to="2" data-bs-target="#carouselExampleIndicators" type="button"></button>
-    </div>
-    <div class="carousel-inner">
-        <!-- Added data-bs-interval attribute to the parent carousel-inner div to avoid repeating it for every carousel-item -->
-        <div class="carousel-item active" data-bs-interval="7000" aria-label="Properties Carousel" aria-describedby="carousel-description-1">
-          <img alt="Cityscape view of one of our properties" class="d-block w-100 h-100" src="./assets/propertyview/dunkirk_square (3).JPG" style="object-fit: cover;">
-          <div class="carousel-caption">
-            <h5 id="carousel-heading-1" class="animate__animated animate__fadeInDown delay-1s">Our Properties</h5>
-            <p id="carousel-description-1" class="animate__animated animate__fadeInUp d-none d-lg-block delay-2s">
-              Discover the beauty and potential of our properties, and let us help you bring your vision to life.</p>
-            <p class="animate__animated animate__fadeInUp carousel-button delay-3s"><a href="properties.html">Learn More</a></p>
-          </div>
-        </div>   
-        <div class="carousel-item" data-bs-interval="7000" aria-label="Team Carousel" aria-describedby="carousel-description-2">
-          <img alt="..." class="d-block w-100 h-100" src="./assets/propertyview/3600_3rd.jpeg" style="object-fit: cover;">
-          <div class="carousel-caption">
-              <h5 id="carousel-heading-2" class="animate__animated animate__fadeInDown delay-1s">Properties for Lease</h5>
-              <p id="carousel-description-2" class="animate__animated animate__fadeInUp d-none d-lg-block delay-2s">
-                If you're looking for a new place for your business, look no further than here.</p>
-              <p class="animate__animated animate__fadeInUp carousel-button delay-3s"><a href="available.html">Learn More</a></p>
-          </div>
-        </div>
-        <div class="carousel-item" data-bs-interval="7000" aria-labelledby="Lease Carousel" aria-describedby="carousel-description-3">
-          <img alt="..." class="d-block w-100 h-100" src="./assets/propertyview/circle_k (3).JPG" style="object-fit: cover;">
-          <div class="carousel-caption">
-              <h5 id="carousel-heading-3" class="animate__animated animate__fadeInDown delay-1s">Newest Tenants</h5>
-              <p id="carousel=-description-3" class="animate__animated animate__fadeInUp d-none d-lg-block delay-2s">
-                Take a look at the newest tenants to have joined our family.</p>
-              <p class="animate__animated animate__fadeInUp carousel-button delay-3s"><a href="#newProperties">Learn More</a></p>
-          </div>
-      </div>
-    </div>
-    <!-- Formatted buttons for better readability -->
-    <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselExampleIndicators" type="button">
-        <span aria-hidden="true" class="carousel-control-prev-icon"></span>
-        <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carouselExampleIndicators" type="button">
-      <span aria-hidden="true" class="carousel-control-next-icon"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-
-  <!-- New Properties -->
-  <section class="py-4">
-    <div class="container">
-      <h2 class="text-center py-3 fw-bold" id="newProperties">Our Newest Tenants</h2>
-      <div class="row text-center g-4">
-        <div class="col-xl col-lg-6">
-          <div class="card bg-dark text-light h-100">
-            <img src="./assets/propertyimage/lsph.jpg" class="card-img-top" alt="A photo of a new property with a beautiful landscape" style="height: 250px; width: auto; object-fit: cover;">                
-            <div class="card-body d-flex flex-column">
-              <h2 class="card-title m-0 p-0">Lincoln Square Pancake House</h2>
-              <h4 class="card-text mt-0 mb-1 p-0">Bloomington, Indiana</h4>
-              <p class="card-text flex-grow-1 mt-1 text-start">
-                Lincoln Square Pancake House is thrilled to open its 13th Indiana location in Bloomington.  This marks Lincoln Square’s first location outside of the greater Indianapolis market, 
-                and they’re making a big splash by occupying one of Bloomington’s highest traffic corners: E. Indiana 45 Bypass & N. Walnut St.
-              </p>
-              <div class="text-center mt-auto">
-                <a href="./properties/2160-N-Walnut.html" class="btn btn-primary lead" aria-label="Learn more about this new property">Learn More</a>
+    <!-- New Properties -->
+    <section class="py-4">
+      <div class="container">
+        <h2 class="text-center py-3 fw-bold" id="newProperties">Our Newest Tenants</h2>
+        <div class="row text-center g-4">
+          <div class="col-xl col-lg-6">
+            <div class="card bg-dark text-light h-100">
+              <img src="./assets/propertyimage/lsph.jpg" class="card-img-top" alt="A photo of a new property with a beautiful landscape" style="height: 250px; width: auto; object-fit: cover;">                
+              <div class="card-body d-flex flex-column">
+                <h2 class="card-title m-0 p-0">Lincoln Square Pancake House</h2>
+                <h4 class="card-text mt-0 mb-1 p-0">Bloomington, Indiana</h4>
+                <p class="card-text flex-grow-1 mt-1 text-start">
+                  Lincoln Square Pancake House is thrilled to open its 13th Indiana location in Bloomington.  This marks Lincoln Square’s first location outside of the greater Indianapolis market, 
+                  and they’re making a big splash by occupying one of Bloomington’s highest traffic corners: E. Indiana 45 Bypass & N. Walnut St.
+                </p>
+                <div class="text-center mt-auto">
+                  <a href="./properties/2160-N-Walnut.html" class="btn btn-primary lead" aria-label="Learn more about this new property">Learn More</a>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-xl col-lg-6">
-          <div class="card bg-dark text-light h-100">
-            <img src="./assets/propertyimage/rita.png" class="card-img-top" alt="A photo of a new property with a modern design" style="height: 250px; width: auto; object-fit: cover;">                
-            <div class="card-body d-flex flex-column">
-              <h2 class="card-title m-0 p-0">Rita's Italian Ice & Custard</h2>
-              <h4 class="card-text mt-0 mb-1 p-0">Bloomington, Indiana</h4>
-              <p class="card-text flex-grow-1 mt-1 text-start">
-                Rita’s Italian Ice & Custard is set to open its doors to the public in late November 2023.  The store will include two (2) pick-up windows along with indoor ordering.  
-                Opening just off the corner of Kirkwood & Dunn, this location will serve both IU students and locals alike. This will be Rita’s first location outside of the greater Indianapolis market. 
-              </p>
-              <div class="text-center mt-auto">
-                <a href="./properties/dunkirk-square.html" class="btn btn-primary lead" aria-label="Learn more about this new property">Learn More</a>
+          <div class="col-xl col-lg-6">
+            <div class="card bg-dark text-light h-100">
+              <img src="./assets/propertyimage/rita.png" class="card-img-top" alt="A photo of a new property with a modern design" style="height: 250px; width: auto; object-fit: cover;">                
+              <div class="card-body d-flex flex-column">
+                <h2 class="card-title m-0 p-0">Rita's Italian Ice & Custard</h2>
+                <h4 class="card-text mt-0 mb-1 p-0">Bloomington, Indiana</h4>
+                <p class="card-text flex-grow-1 mt-1 text-start">
+                  Rita’s Italian Ice & Custard is set to open its doors to the public in late November 2023.  The store will include two (2) pick-up windows along with indoor ordering.  
+                  Opening just off the corner of Kirkwood & Dunn, this location will serve both IU students and locals alike. This will be Rita’s first location outside of the greater Indianapolis market. 
+                </p>
+                <div class="text-center mt-auto">
+                  <a href="./properties/dunkirk-square.html" class="btn btn-primary lead" aria-label="Learn more about this new property">Learn More</a>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
     
-  <div class="container pt-3">
-    <div class="row">
-      <div class="col-md-8 mx-auto text-center">
-        <hr class="my-3" style="width: 60%; margin-left: auto; margin-right: auto;">
-      </div>
-    </div>
-  </div>
-
-
-
-  <!-- About Us Section -->
-  <section id="aboutus" class="py-4">
-    <div class="container">
-      <h1 class="text-center mb-5 fw-bold">About Us</h1>
-      <div class="row align-items-center justify-content-between">
-        <div class="col-lg col-md-12 pb-3">
-          <img src="./assets/img/group1.jpg" class="img-fluid rounded-5" alt="A group of people standing together and smiling">
-        </div>
-        <div class="col-lg col-md-12 p-3">
-          <h2>Our Philosophy</h2>
-          <p class="lead">
-            "Building a community of success, one partnership at a time."
-          </p>
-          <p>Many companies call themselves a family, but at Krane Properties we work with families, employ entire families, 
-            and are owned by a family. We treat those that we do business with like they’re one of our own. Our core business 
-            model isn’t one to maximize profits, but to allow our tenants the financial ability to be successful. The longevity 
-            of our tenants speaks for itself, and we go above and beyond to make life as easy as possible for the businesses that 
-            rent from us.</p>
-          <a href="about.html" class="btn btn-light mt-3 fw-bold" aria-label="Learn more about our philosophy and services">
-            <i class="bi bi-chevron-right"></i>Learn More
-          </a>
+    <div class="container pt-3">
+      <div class="row">
+        <div class="col-md-8 mx-auto text-center">
+          <hr class="my-3" style="width: 60%; margin-left: auto; margin-right: auto;">
         </div>
       </div>
     </div>
-  </section>
+    
 
-  <div class="container pt-3">
-    <div class="row">
-      <div class="col-md-8 mx-auto text-center">
-        <hr class="my-3" style="width: 60%; margin-left: auto; margin-right: auto;">
-      </div>
-    </div>
-  </div>
-
-  <!-- Contact & Map -->
-  <section class="pt-4">
-    <div class="container p-5">
-      <h1 class="text-center mb-4">Contact Info</h1>
-      <div class="row p-3">
-        <div class="col-md">
-          <ul class="list-group list-group-flush lead">
-            <li class="list-group-item">
-              <span class="fw-bold">Location:</span> 1440 Liberty Drive, Bloomington, Indiana 47403
-            </li>
-            <li class="list-group-item">
-              <label for="office-phone" class="fw-bold">Office Phone:</label>
-              <a href="tel:(812)334-1936" id="office-phone">(812) 334-1936</a>
-            </li>
-            <li class="list-group-item">
-              <label for="office-email" class="fw-bold">Office Email:</label>
-              <a href="mailto:mail@kksales.com" id="collections-email">mail@kksales.com</a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-md">
-          <div id="map1" aria-label="Map displaying location of 1440 Liberty Drive, Bloomington, Indiana"></div>
+    <!-- About Us Section -->
+    <section id="aboutus" class="py-4">
+      <div class="container">
+        <h1 class="text-center mb-5 fw-bold">About Us</h1>
+        <div class="row align-items-center justify-content-between">
+          <div class="col-lg col-md-12 pb-3">
+            <img src="./assets/img/group1.jpg" class="img-fluid rounded-5" alt="A group of people standing together and smiling">
+          </div>
+          <div class="col-lg col-md-12 p-3">
+            <h2>Our Philosophy</h2>
+            <p class="lead">
+              "Building a community of success, one partnership at a time."
+            </p>
+            <p>Many companies call themselves a family, but at Krane Properties we work with families, employ entire families, 
+              and are owned by a family. We treat those that we do business with like they’re one of our own. Our core business 
+              model isn’t one to maximize profits, but to allow our tenants the financial ability to be successful. The longevity 
+              of our tenants speaks for itself, and we go above and beyond to make life as easy as possible for the businesses that 
+              rent from us.</p>
+            <a href="about.html" class="btn btn-light mt-3 fw-bold" aria-label="Learn more about our philosophy and services">
+              <i class="bi bi-chevron-right"></i>Learn More
+            </a>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-    
+    </section>
 
-  <!-- Footer -->
-  <footer class="p-3 bg-dark text-white text-center mt-5 mb-0 position-relative">
-    <div class="container pb-2">
-      <div class="col-lg col-md-12">
-        <img src="./assets/Krane Properties - 1000x200.jpg" class="img-fluid rounded-4 mb-4 mt-2" alt="" style="height: 125px; width: auto;">
+    <div class="container pt-3">
+      <div class="row">
+        <div class="col-md-8 mx-auto text-center">
+          <hr class="my-3" style="width: 60%; margin-left: auto; margin-right: auto;">
+        </div>
       </div>
-      <p class="mb-0 fs-7">
-        <a href="sitemap.html">Site Map</a> | <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a>
-      </p>
-      <p class="lead mb-0 fs-6">
-        &copy; 2023 Krane Properties. 
-      </p>
-      <p class="class lead pt-0 my-0 fs-7">All Rights Reserved.</p>
-      <!-- <p class="lead mb-0 fs-7">
-        Site by <a href="mailto: landon@kksales.com">Landon Tally</a>
-      </p> -->
-      <a href="#" class="position-absolute bottom-0 end-0 p-3" rel="nofollow">
-        <i class="bi bi-arrow-up-circle h1"></i>
-      </a>
     </div>
-  </footer>
-    
-    
+
+
+    <!-- Contact & Map -->
+    <section class="pt-4">
+      <div class="container p-5">
+        <h1 class="text-center mb-4">Contact Info</h1>
+        <div class="row p-3">
+          <div class="col-md">
+            <ul class="list-group list-group-flush lead">
+              <li class="list-group-item">
+                <span class="fw-bold">Location:</span> 1440 Liberty Drive, Bloomington, Indiana 47403
+              </li>
+              <li class="list-group-item">
+                <label for="office-phone" class="fw-bold">Office Phone:</label>
+                <a href="tel:(812)334-1936" id="office-phone">(812) 334-1936</a>
+              </li>
+              <li class="list-group-item">
+                <label for="office-email" class="fw-bold">Office Email:</label>
+                <a href="mailto:mail@kksales.com" id="collections-email">mail@kksales.com</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md">
+            <div id="map1" aria-label="Map displaying location of 1440 Liberty Drive, Bloomington, Indiana"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+      
+
+    <!-- Footer -->
+    <footer class="p-3 bg-dark text-white text-center mt-5 mb-0 position-relative">
+      <div class="container pb-2">
+        <div class="col-lg col-md-12">
+          <img src="./assets/Krane Properties - 1000x200.jpg" class="img-fluid rounded-4 mb-4 mt-2" alt="" style="height: 125px; width: auto;">
+        </div>
+        <p class="mb-0 fs-7">
+          <a href="sitemap.html">Site Map</a> | <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a>
+        </p>
+        <p class="lead mb-0 fs-6">
+          &copy; 2023 Krane Properties. 
+        </p>
+        <p class="class lead pt-0 my-0 fs-7">All Rights Reserved.</p>
+        <!-- <p class="lead mb-0 fs-7">
+          Site by <a href="mailto: landon@kksales.com">Landon Tally</a>
+        </p> -->
+        <a href="#" class="position-absolute bottom-0 end-0 p-3" rel="nofollow">
+          <i class="bi bi-arrow-up-circle h1"></i>
+        </a>
+      </div>
+    </footer>  
+
 
     <!-- Scripts -->
      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
