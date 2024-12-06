@@ -11,8 +11,22 @@ const properties = [
       info: "",
       imageUrl: "./assets/propertyimage/1477_main.jpg",
       webPage: "./properties/1477-Main.html",
-      lat: 40.04447,
-      lng: -85.99619,
+      lat: 39.83268,
+      lng: -86.36995,
+    },
+    {
+      id: 3,
+      name: "Bedford Shoppes",
+      new: "",
+      address: "3302 John A Williams Blvd",
+      city: "Bedford",
+      state: "IN",
+      zip: "47421",
+      info: "",
+      imageUrl: "./assets/propertyimage/bedfordshoppes.jpg",
+      webPage: "./properties/1477-Main.html",
+      lat: 38.86727,
+      lng: -86.51774,
     },
     {
       id: 1,
@@ -28,6 +42,7 @@ const properties = [
       lat: 40.04447,
       lng: -85.99619,
     },
+
   ];
   
   // Initialize the map

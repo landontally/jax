@@ -429,10 +429,10 @@ const properties = [
     state: "IN",
     zip: "47421",
     info: "",
-    imageUrl: "./assets/propertyimage/1477_main.jpg",
+    imageUrl: "./assets/propertyimage/bedfordshoppes.jpg",
     webPage: "./properties/1477-Main.html",
     lat: 38.86727,
-    lng: -86.52124,
+    lng: -86.51774,
   },
   {
     id: 31,
@@ -473,7 +473,7 @@ const properties = [
     info: "",
     imageUrl: "./assets/propertyimage/irvington.jpg",
     webPage: "./properties/5614-Washington.html",
-    lat: 39.77115,
+    lat: 39.77085,
     lng: -86.07149,
   },
   {
