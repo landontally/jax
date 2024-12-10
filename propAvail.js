@@ -42,7 +42,20 @@ const properties = [
       lat: 40.04447,
       lng: -85.99619,
     },
-
+    {
+      id: 4,
+      name: "For Sale - $645,000",
+      new: "",
+      address: "5859 West Morris St.",
+      city: "Indianapolis",
+      state: "IN",
+      zip: "46241",
+      info: "",
+      imageUrl: "./assets/propertyimage/5859-morris.jpg",
+      webPage: "./properties/5859-Morris.html",
+      lat: 39.75018,
+      lng: -86.26150,
+    },
   ];
   
   // Initialize the map
