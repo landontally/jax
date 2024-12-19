@@ -76,7 +76,6 @@
   </nav>
 
   <section class="mt-5">
-    <h1 class="text-center property-title mb-0">118-124 Kirkwood Avenue</h1>
     <h1 class="text-center property-title mt-0 mb-0">118-124 East Kirkwood Avenue</h1>
     <h4 class="text-center mb-3">100% Leased in Bloomington, IN</h4>
   </section>
@@ -150,14 +149,14 @@
       </div>
     </div>
     
-
+<!-- 
     <div class="container">
         <div class="row">
           <div class="col-md-8 mx-auto text-center">
             <hr class="my-3" style="width: 60%; margin-left: auto; margin-right: auto;">
           </div>
         </div>
-    </div>
+    </div> -->
 
     <!-- Maps + Tabs -->
 
@@ -165,7 +164,7 @@
       <div class="container">
           <div class="row text-center justify-content-center">
                 <div class="col-lg-9 pr-3 pb-3">
-                  <div id="map2" style="height: 75vh" aria-label="Map displaying location of 1440 Liberty Drive, Bloomington, Indiana">
+                  <div id="map2" style="height: 75vh" aria-label="Map displaying location of 128-124 Kirkwood, Bloomington, Indiana">
                 </div>
           </div>
       </div>  
@@ -272,12 +271,12 @@
      <script>
 	     mapboxgl.accessToken = 'pk.eyJ1IjoibHRhbGx5IiwiYSI6ImNsZjhlZHhlZjF1cXgzeXBxaThkaW8wMWkifQ.DBKNmdcZSJ7crjDcnad6lg';
 
-       const map1 = new mapboxgl.Map({
-        container: 'map1', // container ID
-        style: 'mapbox://styles/mapbox/streets-v12', // style URL
-        center: [-86.57713, 39.156], // starting position [lng, lat], opposite of google maps
-        zoom: 11.5 // starting zoom
-      });
+      //  const map1 = new mapboxgl.Map({
+      //   container: 'map1', // container ID
+      //   style: 'mapbox://styles/mapbox/streets-v12', // style URL
+      //   center: [-86.57713, 39.156], // starting position [lng, lat], opposite of google maps
+      //   zoom: 11.5 // starting zoom
+      // });
 
       const map2 = new mapboxgl.Map({
         container: 'map2', // container ID
@@ -286,9 +285,9 @@
         zoom: 15 // starting zoom
       });
 
-      const marker1 = new mapboxgl.Marker()
-        .setLngLat([-86.5778, 39.1555])
-        .addTo(map1);
+      // const marker1 = new mapboxgl.Marker()
+      //   .setLngLat([-86.5778, 39.1555])
+      //   .addTo(map1);
 
       const marker2 = new mapboxgl.Marker()
         .setLngLat([-86.53277, 39.16635])

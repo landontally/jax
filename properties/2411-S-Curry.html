@@ -100,9 +100,6 @@
     <!-- About Property -->
     <section id="aboutProperty" class="">
       <div class="container">
-        <!-- <div class="col-md p-3 text-center">
-          <img src="../assets/propertyview/lincolnsquare.jpg" style="width: 75%; height: auto;" class="img-fluid rounded-5 shadow" alt="The 2310 South Hickory Leaf Drive building.">
-        </div> -->
           <h2 class="text-center my-4" style="word-wrap: break">About the Property</h2>
           <dl class="row">
               <dt class="col-sm-3">Tenants</dt>
@@ -151,15 +148,7 @@
         </div>
       </div>
     </div>
-    
 
-    <div class="container">
-        <div class="row">
-          <div class="col-md-8 mx-auto text-center">
-            <hr class="my-3" style="width: 60%; margin-left: auto; margin-right: auto;">
-          </div>
-        </div>
-    </div>
 
     <!-- Maps + Tabs -->
 
@@ -167,7 +156,7 @@
       <div class="container">
           <div class="row text-center justify-content-center">
                 <div class="col-lg-9 pr-3 pb-3">
-                  <div id="map2" style="height: 75vh" aria-label="Map displaying location of 123 S. Kingston Drive, Bloomington, Indiana">
+                  <div id="map2" style="height: 75vh" aria-label="Map displaying location of 2411 South Curry, Bloomington, Indiana">
                 </div>
           </div>
       </div>  
@@ -205,34 +194,7 @@
             </div>
           </div>
     </section>
-  
-    <!-- Contact & Map -->
-    <!-- <section class="pt-4">
-      <div class="container p-5">
-        <h1 class="text-center mb-4">Contact Info</h1>
-        <div class="row p-3">
-          <div class="col-md">
-            <ul class="list-group list-group-flush lead">
-              <li class="list-group-item">
-                <span class="fw-bold">Location:</span> 1440 Liberty Drive, Bloomington, Indiana 47403
-              </li>
-              <li class="list-group-item">
-                <label for="office-phone" class="fw-bold">Office Phone:</label>
-                <a href="tel:(812)345-1663" id="office-phone">812.345.1663</a>
-              </li>
-              <li class="list-group-item">
-                <label for="office-email" class="fw-bold">Office Email:</label>
-                <a href="mailto:eric@jaxpropgroup.com" id="collections-email">eric@jaxpropgroup.com</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-md">
-            <div id="map1" aria-label="Map displaying location of 1440 Liberty Drive, Bloomington, Indiana"></div>
-          </div>
-        </div>
-      </div>
-    </section> -->
-      
+
   
   <!-- Footer -->
   <footer class="p-3 bg-dark text-white text-center mt-5 mb-0 position-relative">
@@ -274,12 +236,6 @@
      <script>
 	     mapboxgl.accessToken = 'pk.eyJ1IjoibHRhbGx5IiwiYSI6ImNsZjhlZHhlZjF1cXgzeXBxaThkaW8wMWkifQ.DBKNmdcZSJ7crjDcnad6lg';
 
-       const map1 = new mapboxgl.Map({
-        container: 'map1', // container ID
-        style: 'mapbox://styles/mapbox/streets-v12', // style URL
-        center: [-86.57713, 39.156], // starting position [lng, lat], opposite of google maps
-        zoom: 11.5 // starting zoom
-      });
 
       const map2 = new mapboxgl.Map({
         container: 'map2', // container ID
@@ -288,9 +244,6 @@
         zoom: 15 // starting zoom
       });
 
-      const marker1 = new mapboxgl.Marker()
-        .setLngLat([-86.5778, 39.1555])
-        .addTo(map1);
 
       const marker2 = new mapboxgl.Marker()
         .setLngLat([-86.58230, 39.14336])
