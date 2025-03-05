@@ -103,9 +103,6 @@
     <!-- About Property -->
     <section id="aboutProperty" class="">
       <div class="container">
-        <!-- <div class="col-md p-3 text-center">
-          <img src="../assets/propertyview/lincolnsquare.jpg" style="width: 75%; height: auto;" class="img-fluid rounded-5 shadow" alt="The 2310 South Hickory Leaf Drive building.">
-        </div> -->
           <h2 class="text-center my-4" style="word-wrap: break">About the Property</h2>
           <dl class="row">
               <dt class="col-sm-3">Tenants</dt>
@@ -241,13 +238,28 @@
 	     mapboxgl.accessToken = 'pk.eyJ1IjoibHRhbGx5IiwiYSI6ImNsZjhlZHhlZjF1cXgzeXBxaThkaW8wMWkifQ.DBKNmdcZSJ7crjDcnad6lg';
 
 
-      const map2 = new mapboxgl.Map({
-        container: 'map2', // container ID
-        style: 'mapbox://styles/mapbox/streets-v12', // style URL
-        center: [-86.57151, 39.16752], // starting position [lng, lat], opposite of google maps
-        zoom: 15 // starting zoom
-      });
-
+       const map2 = new mapboxgl.Map({
+          container: 'map2',
+          style: {
+            version: 8,
+            sources: {
+              osm: {
+                type: 'raster',
+                tiles: ['https://a.tile.openstreetmap.org/{z}/{x}/{y}.png'], // Fixed tile URL
+                tileSize: 256
+              }
+            },
+            layers: [
+              {
+                id: 'osm-layer',
+                type: 'raster',
+                source: 'osm'
+              }
+            ]
+          },
+          center: [-86.57713, 39.156],
+          zoom: 12
+        });
 
       const marker2 = new mapboxgl.Marker()
         .setLngLat([-86.57151, 39.16752])

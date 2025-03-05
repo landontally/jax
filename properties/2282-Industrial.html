@@ -239,13 +239,28 @@
 	     mapboxgl.accessToken = 'pk.eyJ1IjoibHRhbGx5IiwiYSI6ImNsZjhlZHhlZjF1cXgzeXBxaThkaW8wMWkifQ.DBKNmdcZSJ7crjDcnad6lg';
 
 
-      const map2 = new mapboxgl.Map({
-        container: 'map2', // container ID
-        style: 'mapbox://styles/mapbox/streets-v12', // style URL
-        center: [-86.56872, 39.17525], // starting position [lng, lat], opposite of google maps
-        zoom: 15 // starting zoom
-      });
-
+       const map2 = new mapboxgl.Map({
+          container: 'map2',
+          style: {
+            version: 8,
+            sources: {
+              osm: {
+                type: 'raster',
+                tiles: ['https://a.tile.openstreetmap.org/{z}/{x}/{y}.png'], // Fixed tile URL
+                tileSize: 256
+              }
+            },
+            layers: [
+              {
+                id: 'osm-layer',
+                type: 'raster',
+                source: 'osm'
+              }
+            ]
+          },
+          center: [-86.56872, 39.17525],
+          zoom: 13
+        });
 
       const marker2 = new mapboxgl.Marker()
         .setLngLat([-86.56872, 39.17525])
