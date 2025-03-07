@@ -22,10 +22,6 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.css" integrity="sha512-mQ77VzAakzdpWdgfL/lM1ksNy89uFgibRQANsNneSTMD/bj0Y/8+94XMwYhnbzx8eki2hrbPpDm0vD0CiT2lcg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.Default.css" integrity="sha512-6ZCLMiYwTeli2rVh3XAPxy3YoR5fVxGdH/pz+KMCzRY2M65Emgkw00Yqmhh8qLGeYQ3LbVZGdmOX9KUjSKr0TA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-	<!-- Mapbox -->
-    <link href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' rel='stylesheet' />
-    <script src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js'></script>
-
 	<!-- CSS -->
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" type="image/png" href="android-chrome-512x512.png" sizes="512x512">
@@ -112,7 +108,7 @@
 
 		<!-- Mapbox -->
 		<script>
-		var mymap = new L.Map('mymap', {
+		var mymap = new L.Map('mapid', {
 		layers: [
 			new L.TileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				'attribution': 'Map data © <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'

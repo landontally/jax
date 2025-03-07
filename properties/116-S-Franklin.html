@@ -15,9 +15,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 
-    <!-- Mapbox -->
-    <link href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' rel='stylesheet' />
-    <script src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js'></script>
+    	<!-- Leaflet -->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+  integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+  crossorigin=""/>
+<link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder@1.13.0/dist/Control.Geocoder.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.css" integrity="sha512-mQ77VzAakzdpWdgfL/lM1ksNy89uFgibRQANsNneSTMD/bj0Y/8+94XMwYhnbzx8eki2hrbPpDm0vD0CiT2lcg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.Default.css" integrity="sha512-6ZCLMiYwTeli2rVh3XAPxy3YoR5fVxGdH/pz+KMCzRY2M65Emgkw00Yqmhh8qLGeYQ3LbVZGdmOX9KUjSKr0TA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 
     <!-- CSS -->
     <!-- <link rel="stylesheet" href="template.css" /> -->
@@ -154,15 +159,14 @@
   </div>
     
 
-    <section id="mapTabs" class="mt-3">
-      <div class="container">
-          <div class="row text-center justify-content-center">
-                <div class="col-lg-9 pr-3 pb-3">
-                  <div id="map2" style="height: 75vh" aria-label="Map displaying location of 116 S. Franklin, Bloomington, Indiana">
-                </div>
-          </div>
-      </div>  
+  <section class="p-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-9 pr-3 pb-3">
+        <div id="mapid" style="height: 75vh"></div>
+      </div>
+    </div>
   </section>
+
 
       
     <div class="container">
@@ -234,37 +238,32 @@
      <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
      <script src="../swipe.js"></script>
+
+     		<!-- Leaflet -->
+		<script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+    integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+    crossorigin=""></script>		  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/leaflet.markercluster.js" integrity="sha512-OFs3W4DIZ5ZkrDhBFtsCP6JXtMEDGmhl0QPlmWYBJay40TT1n3gt2Xuw8Pf/iezgW9CdabjkNChRqozl/YADmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://unpkg.com/leaflet-control-geocoder@1.13.0/dist/Control.Geocoder.js"></script>
+
      <script>
-	     mapboxgl.accessToken = 'pk.eyJ1IjoibHRhbGx5IiwiYSI6ImNsZjhlZHhlZjF1cXgzeXBxaThkaW8wMWkifQ.DBKNmdcZSJ7crjDcnad6lg';
+      // Initialize Leaflet Map
+      var mymap = new L.Map('mapid', {
+		layers: [
+			new L.TileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+				'attribution': 'Map data © <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
+				})
+			],
+			center: [39.16752, -86.57151],
+			zoom: 13
+			});
 
 
-       const map2 = new mapboxgl.Map({
-          container: 'map2',
-          style: {
-            version: 8,
-            sources: {
-              osm: {
-                type: 'raster',
-                tiles: ['https://a.tile.openstreetmap.org/{z}/{x}/{y}.png'], // Fixed tile URL
-                tileSize: 256
-              }
-            },
-            layers: [
-              {
-                id: 'osm-layer',
-                type: 'raster',
-                source: 'osm'
-              }
-            ]
-          },
-          center: [-86.57713, 39.156],
-          zoom: 12
-        });
+      // Add Marker
+      var marker = L.marker([39.16752, -86.57151]).addTo(mymap)
+        .bindPopup("<b>Riviera Maya</b><br>116 S. Franklin Road, Bloomington, IN")
+        .openPopup();
+     </script>
 
-      const marker2 = new mapboxgl.Marker()
-        .setLngLat([-86.57151, 39.16752])
-        .addTo(map2);
-
-    </script>
   </body>
 </html>
