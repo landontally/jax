@@ -23,7 +23,7 @@ const properties = [
       state: "IN",
       zip: "47408",
       info: "",
-      imageUrl: "./assets/propertyimage/250_S_Pete_Ellis(1).JPG",
+      imageUrl: "./assets/propertyimage/250_pete_ellis.JPG",
       webPage: "./properties/250-S-Pete-Ellis.html",
       lat: 39.16561,
       lng: -86.49523,
