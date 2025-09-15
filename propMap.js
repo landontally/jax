@@ -602,6 +602,20 @@ const properties = [
     lat: 40.00025,
     lng: -86.00485,
   },
+  {
+    id: 61,
+    name: "",
+    new: "",
+    address: "17655 Cumberland Road",
+    city: "Noblesville",
+    state: "IN",
+    zip: "46060",
+    info: "",
+    imageUrl: "./assets/propertyimage/cumberland.jpg",
+    webPage: "./properties/17655-Cumberland.html",
+    lat: 40.04447,
+    lng: -85.99619,
+  },
 ];
 
 // Initialize the map
