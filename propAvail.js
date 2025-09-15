@@ -15,6 +15,34 @@ const properties = [
     //   lng: -86.36995,
     // },
     {
+      id: 5,
+      name: "Available",
+      new: "",
+      address: "250 S. Pete Ellis Drive",
+      city: "Bloomington",
+      state: "IN",
+      zip: "47408",
+      info: "",
+      imageUrl: "./assets/propertyimage/250_S_Pete_Ellis(1).JPG",
+      webPage: "./properties/250-S-Pete-Ellis.html",
+      lat: 39.16561,
+      lng: -86.49523,
+    },
+    {
+      id: 6,
+      name: "Available",
+      new: "",
+      address: "3027 US-36",
+      city: "Pendleton",
+      state: "IN",
+      zip: "46064",
+      info: "",
+      imageUrl: "./assets/propertyimage/3027-us36.png",
+      webPage: "./properties/3027-US-36.html",
+      lat: 40.00021,
+      lng: -85.73141,
+    },
+    {
       id: 3,
       name: "Bedford Shoppes",
       new: "",
@@ -56,6 +84,7 @@ const properties = [
     //  lat: 40.04447,
     //  lng: -85.99619,
     //},
+
   ];
   
   // Initialize the map
